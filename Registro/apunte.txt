@@ -1,0 +1,68 @@
+<?php
+error_reporting(0);
+//llamar conexión base de datos
+include 'Base-de-datos/conexion.php';
+
+if(isset($_POST['iniciar-sesion'])){
+    $user='carl@gmail.com';
+    $contra='12345Aa:';
+    $ruser=$_POST['email'];//ruser r=recuperar user=usuario por que luego llora el niño omar psdt:carita enojada
+    $rpass=$_POST['contraseña'];//pass de password
+    if($user == $ruser && $contra == $rpass){
+                                }
+            else{
+                $mensaje.="<div class='contenedor-mensaje'>
+                <strong>Usuario no valido</strong> El usuario no se encuatra registrado en el sistema consulta a soporte.
+                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                <span aria-hidden='true'>&times;</span>
+                </button>
+            </div>";
+            }
+}
+?>
+
+
+
+/*if (!empty($_POST['Registrar']))
+{
+    if (empty($_POST['nombre']) or empty($_POST['apellido']) or empty($_POST['email']) or empty($_POST['contraseña']) or empty($_POST['verificar-contraseña'])){
+        echo "<div class='contenedor-mensaje'>
+        <strong>empty</strong>
+        </div>";
+    }
+    else{
+        $nombre=$_POST['nombre'];
+        $apellido=$_POST['apellido'];
+        $email=$_POST['email'];
+        $contraseña=$_POST['contraseña'];
+        $validar_contraseña=$_POST['verificar-contraseña'];
+            if ($contraseña == $validar_contraseña)
+            {
+                $contraseña_encriptada = md5($contraseña);
+                //auto incremento
+                $id_usuario=$conexion->query("SELECT MAX(id_usuario) + 1  FROM usuarios;");
+                $sql=$conexion->query("INSERT INTO `usuarios`(`id_usuario`, `nombre_usuario`, `apellido_usuario`, `contraseña`, `correo_electronico`) VALUES ('$id_usuario','$nombre','$apellido','$email','$contraseña_encriptada');");
+                if($sql == 1)
+                {
+                    $mensaje="<div class='contenedor-mensaje'>
+                    <strong>usuario registrado correctamente</strong>
+                    </div>";
+                }
+                else
+                {
+                    $mensaje="<div class='contenedor-mensaje'>
+                    <strong>hubo un error en el registro</strong>
+                    </div>";
+                }
+        }
+        else
+        {
+            $mensaje="<div class='contenedor-mensaje'>
+            <strong>Contraseña no valida</strong> Las contraseñas ingresadas no coinciden, intentelo nuevamente.
+            </div>";
+        }
+    }
+    $mensaje="<div class='contenedor-mensaje'>
+        <strong>aca tambien</strong>
+        </div>";
+}*/

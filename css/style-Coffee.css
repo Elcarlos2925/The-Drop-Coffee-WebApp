@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@500&family=Nunito:wght@500&family=Poppins:wght@600&display=swap');
+/*===========================Fuentes===========================*/
+
+/*===========================Contenedor de Productos===========================*/
+.productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en el ancho del contenedor */
+    justify-content:space-around;
+    padding: 50px 50px;
+}
+
+
+.fondo-contenedor {
+    background-color: #F5F5F7;
+    width: 278px;
+    height: 430px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.6s ease 0s;
+    margin-right: 10px;
+}
+    .contenedor_producto:hover { 
+        transform: scale(1.1);
+        border-radius: 10px 10px 10px 10px;
+        background-color: #EBE6DF;
+        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    }
+
+.contenedor_producto {
+    width: 250px;
+    margin: 20px auto;
+    text-align: start;
+}
+.contenedor_producto img:not(.carritoplus) {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.descripcion-producto { 
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #342009;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    height: 135px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#nombre-cafe{
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.precio-boton { 
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    font-size: 25px;
+}
+    .precio-boton button{
+        background-color: #B1995C;
+    }
+    #precio {
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        place-items: center;
+        color: #EBE6DF;
+        margin-right: 25px;
+    }
+    .btn-add-carrito{
+        min-height: 100%;
+        min-width: 100%;
+        text-align: end ;
+        margin-right: 20px;
+    }
+    .añadir-al-carrito {
+        background-color: #B1995C;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .añadir-al-carrito img
+    {
+        height:50%;
+    }
+    .añadir-al-carrito:hover{
+        background-color: #EBE6DF;
+    transform: scale(1.1);}
+    .añadir-al-carrito:hover img{
+        filter: invert();}
+/*===========================Contenedor de Productos===========================*/
+
+body {
+    background-color: #EBE6DF;
+position: relative;
+padding-bottom: 80px;
+min-height: 100vh;
+
+}
+
+footer {
+    background-color: #EBE6DF;
+    box-shadow: 0px -2px 32px -5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: .1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
