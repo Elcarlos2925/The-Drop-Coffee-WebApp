@@ -202,3 +202,4 @@
 <script src="script.js"></script>
 <script type="text/javascript" src="../js/Nav-Menu.js"></script>
 </html>
+<script src="../js/cafes.js"></script>

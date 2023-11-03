@@ -134,3 +134,4 @@
 
 </body>
 </html>
+<script src="js/cafes.js"></script>

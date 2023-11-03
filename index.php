@@ -115,3 +115,4 @@ include 'Base-de-datos/conexion.php';
     <script type="text/javascript" src="js/Nav-Menu.js"></script>
 </body>
 </html>
+<script src="js/cafes.js"></script>
