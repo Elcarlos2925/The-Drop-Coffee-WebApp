@@ -44,7 +44,6 @@ include 'Base-de-datos/conexion.php';
                 </li>
                 <li>
                     <a href="Recetas.php">Recetas</a> 
-
                 </li>
             </ul>
         </nav>
