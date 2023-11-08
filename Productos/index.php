@@ -64,9 +64,9 @@
 
 
 
+<div id="contenedor-producto-vista">
 
-
-    <div class="fondo-contenedor-producto">
+    <div class="fondo-contenedor-producto" id="fondo-contenedor-producto">
         <div class="carrusel-datos">
 
             <div class="carrusel-btn">
@@ -197,9 +197,11 @@
             Bolsa de cafe Veracruz de 300 gramos.
         </div>
     </div>
+</div>
 
 </body>
 <script src="script.js"></script>
 <script type="text/javascript" src="../js/Nav-Menu.js"></script>
 </html>
 <script src="../js/cafes.js"></script>
+<script src="../js/Productos-Vista.js"></script>

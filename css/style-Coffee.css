@@ -19,11 +19,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    transition: all 0.6s ease 0s;
     margin-right: 10px;
 }
-    .contenedor_producto:hover { 
-        transform: scale(1.1);
+    .imagen-cafe img { 
+        transition: all 0.3s ease 0s;
+    }
+    .imagen-cafe img:hover { 
+
+        transform: scale(1.05);
         border-radius: 10px 10px 10px 10px;
         background-color: #EBE6DF;
         box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);

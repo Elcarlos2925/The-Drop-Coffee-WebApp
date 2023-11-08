@@ -88,7 +88,6 @@ const contenedorProductos = document.querySelector("#contenedor-productos");
 const numerito = document.querySelector("#numerito");
 let botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
 
-
 function CargarProductos(){
 
     contenedorProductos. innerHTML = "";
@@ -99,8 +98,8 @@ function CargarProductos(){
         div.classList.add("fondo-contenedor");
         div.innerHTML = `
         <div class="contenedor_producto">
-            <div class="imagen-cafe">
-                <a href="Productos/index.php"><img src="${producto.imagen}"></a>
+            <div class="imagen-cafe" id="${producto.id}">
+                <a href="#" id="Productos/index.php" ><img src="${producto.imagen}"></a>
             </div>
 
             <div class="descripcion-producto">
@@ -118,12 +117,12 @@ function CargarProductos(){
 }
 
 function actualizarBotonesAgregar(){
-     botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
-     console.log(botonesAgregar);
+    botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
+    console.log(botonesAgregar);
 
-     botonesAgregar.forEach(boton => {
+    botonesAgregar.forEach(boton => {
         boton.addEventListener("click", agregarAlCarrito);
-     })
+    })
 }
 
 let nuevoNumerito;
@@ -155,6 +154,5 @@ function actualizarNumerito(){
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
-
 CargarProductos();
 actualizarBotonesAgregar();
