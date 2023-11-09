@@ -99,7 +99,7 @@ function CargarProductos(){
         div.innerHTML = `
         <div class="contenedor_producto">
             <div class="imagen-cafe" id="${producto.id}">
-                <a href="Productos/index.php" ><img src="${producto.imagen}"></a>
+                <a href="Productos/Cafes/Cafe${producto.id}.php" ><img src="${producto.imagen}"></a>
             </div>
 
             <div class="descripcion-producto">
