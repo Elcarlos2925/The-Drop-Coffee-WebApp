@@ -89,8 +89,8 @@ const numerito = document.querySelector("#numerito");
 let botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
 
 function CargarProductos(){
-
-    contenedorProductos. innerHTML = "";
+/*
+    contenedorProductos. innerHTML = "";*/
 
     productos.forEach(producto => {
 

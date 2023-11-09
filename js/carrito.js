@@ -125,13 +125,13 @@ function actualizarTotal(){
     const subtotalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     console.log(subtotalCalculado);
     if(subtotalCalculado >= 500){
-        const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc +(producto.precio * producto.cantidad), 0);
+        const totalCalculado = subtotalCalculado;
         total.innerText = `$${totalCalculado}.00`;
         subtotal.innerText = `$${subtotalCalculado}.00`;
         envio.innerText = `GRATIS`;
         mxnenvio.innerText = ``;
     }else{
-        const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + 150 +(producto.precio * producto.cantidad), 0);
+        const totalCalculado = subtotalCalculado + 150;
         total.innerText = `$${totalCalculado}.00`;
         subtotal.innerText = `$${subtotalCalculado}.00`;
         envio.innerText = `$ 150.00`;

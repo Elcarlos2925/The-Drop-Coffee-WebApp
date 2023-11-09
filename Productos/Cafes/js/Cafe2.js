@@ -188,5 +188,12 @@ function CargarInformacion(){
         contenedorProductos.append(div);
     })
 }
+let productosEnCarrito = localStorage.getItem("productos-en-carrito");
+productosEnCarrito = JSON.parse(productosEnCarrito);
+function actualizarNumerito(){
+    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerText = nuevoNumerito;
+}
+actualizarNumerito();
 
 CargarInformacion();
