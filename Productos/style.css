@@ -290,8 +290,8 @@
     border: 1px solid #B1995C;
     min-height: 30vh;
     margin: 0 20px;
-    font-family: 'Poppins',sans-serif;
     padding: 20px;
+    font-family: 'Poppins',sans-serif;
     text-align: justify;
     font-size: 12px;
 }
