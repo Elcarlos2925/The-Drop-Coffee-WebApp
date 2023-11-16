@@ -13,9 +13,12 @@ flex-wrap: wrap;
     margin-bottom: auto;
     margin-top: 30px;
     text-align: justify;
+    flex-wrap: wrap;
 }
 
 .contenedor-mensaje{
+    margin-top: 5px;
+    margin-bottom: 10px;
     background-color: rgb(249, 229, 232);
     border-radius: 10px;
     border:0;
@@ -84,6 +87,7 @@ label{
 }
 input{
     width: 80%;
+    margin-bottom: 10px;
 }
 input , textarea{
     padding: 8px 6%;
@@ -93,14 +97,6 @@ input , textarea{
     font-size: 12px;
     color: #0000;
 }
-
-input:invalid{
-    color: red;
-    }
-
-    input:invalid:focus {
-        outline: 2px solid rgb(202, 33, 33);
-    }
 
 input:valid:focus{
     outline: 2px solid #1E92E9;;

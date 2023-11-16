@@ -24,7 +24,7 @@ include '../ConexionDB/controlador-inicio-sesion.php';
         <a href="../index.php"><img src="img/Logo-White.png" id="Logo"></a>
         <h2>Iniciar Sesión</h2>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-            <label for="email">Correo Electronico: <span style="color: rgb(170, 56, 56);">*</span></label>
+            <label for="email">Correo Electronico:</label>
             <div class="contraseña-contenedor">
                 <input type="email" name="email" id="email" placeholder="Ingrese su Correo Electronico" required>
                 <button type="button" onclick="mostrarCondicionesCorreo()" class="fas fa-info-circle" id="info-btn1"></button>
@@ -32,7 +32,7 @@ include '../ConexionDB/controlador-inicio-sesion.php';
             <div id="mensaje-condiciones-email"></div>
             <br>
 
-            <label for="contraseña">Contraseña: <span style="color: rgb(170, 56, 56);">*</span></label>
+            <label for="contraseña">Contraseña:</label>
             <div class="contraseña-contenedor">
                 <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$" required >
                 <span toggle="#contraseña" class="eye"></span>
