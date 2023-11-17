@@ -9,12 +9,11 @@ body{
 }
 
 .fondo-contenedor{
-/*    background: linear-gradient(
-        50deg,
-        rgb(51, 51, 51) 20%,
-        rgba(118, 118, 118, 0.7)),
-        url('../img/fondoForm.png');*/
-        background-color: #342009;
+   background: linear-gradient(
+        rgb(51, 51, 51,0.9),
+        rgba(118, 118, 118, 0.5)),
+        url('../img/FondoTarjeta.png');/*
+        background-color: #342009;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +23,7 @@ body{
     place-items: center;
     border-radius: 40px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .centrar-tarjeta{
@@ -34,7 +34,6 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-
 .img-chip img{
     width: 100px;
     margin-top: 5px;
@@ -44,17 +43,35 @@ body{
 .contenedor-tarjeta{
     width: 600px;
     height: 300px;
-/*    background-color: #342009;*//*
-    background-color: #acacac;*/
     background: linear-gradient(
-        50deg,
-        rgb(0, 0, 0, 1) 45%,
-        rgb(179, 179, 179) ,
+        30deg,
+        rgb(0, 0, 0, 1) 65%,
+        rgb(179, 179, 179, 1),
         rgba(0,0,0,1) );
     border-radius: 10px;
-    padding:30px 15px;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    padding:30px 15px;
 }
+
+.contenedor-tarjeta-trasero{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+        210deg,
+        rgb(0, 0, 0, 1) 65%,
+        rgb(179, 179, 179, 1) ,
+        rgba(0,0,0,1) );
+}
+
+#banda-magnetica{
+    width: 100%;
+    height: 50px;
+    background-color: #aaa;
+    margin-top: 40px;
+}
+
 .contenedor-tarjeta .contenedor-numero-tarjeta{
     width: 100%;
     height: 60px;
@@ -62,7 +79,7 @@ body{
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
     background: linear-gradient(
-        50deg,
+        100deg,
         rgb(0, 0, 0, 0) 50%,
         rgb(179, 179, 179, 0));
     border: 0;
@@ -71,6 +88,36 @@ body{
     justify-content:center;
     align-items: center;
     margin-bottom: 12px;
+}
+
+.contenedor-cvv-tarjeta{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.contenedor-cvv-tarjeta label{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+    border-right:1px solid #000;
+    width: 40px;
+}
+
+.contenedor-cvv-tarjeta input{
+    width: 60px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    border: 0;
+    color: #000;
 }
 
 #valido-hasta{
@@ -82,6 +129,7 @@ body{
     font-family: 'IBM Plex Mono', monospace;
     display: flex;
 }
+
 .fecha-vencimiento{
     width: 100%;
     height: 80px;
@@ -90,6 +138,7 @@ body{
     justify-content: center;
     margin-bottom: 10px;
 }
+
 #fecha{
     width: 80px;
     height: 100%;
@@ -102,6 +151,7 @@ body{
         rgb(179, 179, 179, 0));
     border: 0;
 }
+
 .fecha-titular .titular{
     color: #fff;
     font-family: 'IBM Plex Mono', monospace;
@@ -119,28 +169,118 @@ body{
     border: 0;
 }
 
-.contenedor-tarjeta input:focus{
+.contenedor-tarjeta input:focus,.contenedor-tarjeta-trasero input:focus{
     outline: none;
     border: 0;
     box-shadow: none;
 }
 
+form{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #btn-finalizar-comprar{
-    margin-top: 50px;
     font-weight: 700;
     font-size: 17px;
     color: #342009;
-    background-color: #EBE6DF;
+    background-color: #fff;
     border: 0;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
     width: 200px;
     height: 50px;
-    display: flex;
+    margin-top: auto;
     margin-left: auto;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 50px;
 }
+.card{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.face{
+    position: absolute;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 8px 10px #000;
+}
+
+.back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card.checked .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card.checked .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.tarjeta-boton{
+    width: 100%;
+    height: 100px;
+    /*flex-wrap: wrap;*/
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: auto;
+}
+
+.tarjeta-boton label{
+    margin-right: 10px;
+}
+
+.lbl-switch{
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background-color: #aaa;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 8px 16px -3px #000;
+}
+
+#btn-switch:checked~ .lbl-switch{
+    background-color: #644A3C;
+}
+
+.lbl-switch:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top:4px;
+    left: 5px;
+    transition: 0.3s;
+    
+}
+
+#btn-switch:checked~ .lbl-switch:after{
+    left: 28px;
+}
+
+#btn-switch{
+    display: none;
+}
+
+

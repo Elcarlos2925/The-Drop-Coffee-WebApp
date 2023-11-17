@@ -89,7 +89,7 @@ function cargarProductosCarrito(){
                         <p id="total">$ 750.00</p>
                         <p class="mxn">MXN</p>
                     </div>                                                      
-                    <a href="../Card/index.php" style=" text-decoration: none;"><button class="Finalizar-compra">ir al pago</button></a>
+                    <a href="../Direccion/index.php" style=" text-decoration: none;"><button class="Finalizar-compra">Realizar Compra</button></a>
                 </div>
         `;
         contenedorCarritoProductos.append(div1);

@@ -17,7 +17,20 @@ function formatoFecha(input) {
     // Establecer el valor formateado en el input
     input.value = fechaFormateada;
 }
-function numeroTarjeta(valor) {
+function numeroTarjeta1(valor) {
+  // Filtrar caracteres no numéricos
+  var numeros = valor.replace(/\D/g, '');
+
+  // Limitar a solo números y dividir en grupos de cuatro dígitos
+  var grupos = numeros.match(/(\d{1,4})/g);
+
+  // Unir los grupos con espacio
+  var resultado = grupos ? grupos.join(' ') : '';
+
+  // Establecer el valor formateado en el input
+  document.getElementById('numeroTarjeta').value = resultado;
+}
+function cvvTarjeta(valor) {
     // Filtrar caracteres no numéricos
     var numeros = valor.replace(/\D/g, '');
 
@@ -28,7 +41,7 @@ function numeroTarjeta(valor) {
     var resultado = grupos ? grupos.join(' ') : '';
 
     // Establecer el valor formateado en el input
-    document.getElementById('numeroTarjeta').value = resultado;
+    document.getElementById('cvv').value = resultado;
 }
 function formatoTitular(valor) {
      // Filtrar caracteres que no son letras ni espacios
@@ -40,3 +53,18 @@ function formatoTitular(valor) {
      // Establecer el valor formateado en el input
      document.getElementById('nombreTitular').value = titularFormateado;
 }
+
+function handleCheckboxChange() {
+          var checkbox = document.getElementById('btn-switch');
+          var cardContainer = document.getElementById('card-container');
+    
+          // Si el checkbox está marcado, añade la clase 'checked' al contenedor, de lo contrario, retírala
+          if (checkbox.checked) {
+            cardContainer.classList.add('checked');
+          } else {
+            cardContainer.classList.remove('checked');
+          }
+        }
+    
+        // Agrega un event listener al checkbox para detectar cambios
+        document.getElementById('btn-switch').addEventListener('change', handleCheckboxChange);
