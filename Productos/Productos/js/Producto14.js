@@ -14,39 +14,41 @@ const productos=[
         <br>
         <br>Ya sea que la uses para mantenerte cálido en una tarde fresca, como parte de tu atuendo diario o como un símbolo de tu amor por el café, esta sudadera es cómoda y versátil. Está confeccionada con materiales de alta calidad que garantizan su durabilidad y comodidad.
         `,
-        "Características": `<h2>Características<h2>
-        <br>Cantidad: 1 pieza
-        <br>Tamaño (Talla): A su elección (CH, M, G, EG)
-        <br>Acabado: Liso
-        <br>Color: Ocre
-        <br>Es industrial: No
-        <br>Es portátil: Sí
-        <br>Género: Unisex
-        <br>Material: 100% algodón
-        <br>Medida de altura: Varía según la talla seleccionada
-        <br>Medida de ancho: Varía según la talla seleccionada
-        <br>Medida de peso: Peso ligero y cómodo
-        <br>Medida de profundidad: Estándar para una playera
-        <br>Requiere ensamblaje: No
-        <br>Uso recomendado: Uso diario, ocasiones casuales
-        <br>Forma: Corte clásico, diseño tradicional
+        "Características": `<h2>Características</h2>
+        <br><strong>Cantidad:</strong> 1 pieza
+        <br><strong>Tamaño (Talla):</strong> A su elección (CH, M, G, EG)
+        <br><strong>Acabado:</strong> Liso
+        <br><strong>Color:</strong> Ocre
+        <br><strong>Es industrial:</strong> No
+        <br><strong>Es portátil: </strong>Sí
+        <br><strong>Género:</strong> Unisex
+        <br><strong>Material:</strong> 100% algodón
+        <br><strong>Medida de altura:</strong> Varía según la talla seleccionada
+        <br><strong>Medida de ancho:</strong>Varía según la talla seleccionada
+        <br><strong>Medida de peso:</strong> Peso ligero y cómodo
+        <br><strong>Medida de profundidad:</strong> Estándar para una playera
+        <br><strong>Requiere ensamblaje:</strong> No
+        <br><strong>Uso recomendado:</strong> Uso diario, ocasiones casuales
+        <br><strong>Forma:</strong> Corte clásico, diseño tradicional
         `,
-        "Instrucciones de uso": `<h2>Instrucciones de uso<h2>
-        <br><h2>Lavado inicial<h2>
+        "Instrucciones_de_uso": `<h2>Instrucciones de uso</h2>
+        <br>
+        <br><strong>Lavado inicial</strong>
         <br>Antes de usar tu sudadera por primera vez, te recomendamos lavarla a máquina o a mano con agua fría y un detergente suave. Enjuaga bien y sécala al aire libre.
-  
-        <br><h2>Lavado regular<h2>
+        <br>
+        <br><strong>Lavado regular</strong>
         <br>Lava tu sudadera después de cada uso para mantenerla fresca y limpia. Utiliza agua fría o tibia y un detergente suave. Evita el uso de blanqueadores o productos de limpieza abrasivos que puedan dañar los colores y la tela.
-  
-        <br><h2>Cuidado con la temperatura<h2>
+        <br>
+        <br><strong>Cuidado con la temperatura</strong>
         <br>Recuerda que las altas temperaturas en la lavadora o secadora pueden acortar la vida útil de tu sudadera y afectar los colores. Te recomendamos lavarla con agua fría y secarla al aire.
-        
-        <br><h2>Cuidado con los estampados<h2>
+        <br>
+        <br><strong>Cuidado con los estampados</strong>
         <br>Evita planchar directamente sobre los estampados. Voltea la sudadera al revés y plancha suavemente si es necesario.
-  
+        <br>
         <br>Siguiendo estos consejos de cuidado, podrás mantener tu playera en óptimas condiciones y prolongar su vida útil. ¡Disfruta de tu playera The Drop Coffee con estilo y comodidad!
-        `
-      }
+        `,
+        "Comentarios": `<h2>Comentarios</h2>`
+    }
 ]
 
 const contenedorProductos = document.querySelector("#contenedor-producto-vista");
@@ -115,12 +117,11 @@ function CargarInformacion(){
                             </div>
                         </div>
                         <div class="like-share">
-                            <button class="like">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <button class="share">
-                                <i class="fas fa-link"></i>
-                            </button>
+                            <input type="checkbox" id="like">
+                            <label for="like" class="lbl-like"><i class="fas fa-heart"></i></label>
+                            
+                            <input type="checkbox" id="share">
+                            <label for="share" class="lbl-share"><i class="fas fa-link"></i></label>
                         </div>
                     </div>
                     <div class="precio-mxn-completo">
@@ -173,20 +174,20 @@ function CargarInformacion(){
             </div>
 
             <div class="barra-opciones">
-                <button  id="btn-descripcion" >
+                <button  id="btn-descripcion" onclick="mostrarDescripcion()">
                     Descripción
                 </button>
-                <button id="btn-ingredientes">
-                    Ingredientes
+                <button id="btn-ingredientes" onclick="mostrarCaracteristicas()">
+                    Características
                 </button>
-                <button id="btn-instrucciones">
+                <button id="btn-instrucciones" onclick="mostrarInstrucciones()">
                     Instrucciones de uso
                 </button>
-                <button id="btn-comentarios">
+                <button id="btn-comentarios" onclick="mostrarComentarios()">
                     Comentarios
                 </button>
             </div>
-            <div class="contenido">
+            <div class="contenido" id="contenido">
                 <p>${producto.Descripción}</p>
             </div>
     </div>
@@ -203,3 +204,109 @@ function actualizarNumerito(){
 }
 actualizarNumerito();
 CargarInformacion();
+
+function mostrarDescripcion() {
+
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Descripción}
+            <style>
+                #btn-descripcion{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-instrucciones,
+                #btn-comentarios,
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+
+function mostrarCaracteristicas() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Características}
+            <style>
+                #btn-ingredientes{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-instrucciones,
+                #btn-comentarios,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+  function mostrarInstrucciones() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Instrucciones_de_uso}
+            <style>
+                #btn-instrucciones{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-comentarios,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+  function mostrarComentarios() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Comentarios}
+            <style>
+                #btn-comentarios{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-instrucciones,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }

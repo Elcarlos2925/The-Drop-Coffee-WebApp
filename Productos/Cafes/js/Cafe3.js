@@ -23,11 +23,12 @@ const productos=[
         <br>Molienda: Media
         `, 
         "Ingredientes": `
-        Ingredientes
+        <h2>Ingredientes</h2>
+        <br>
         <br>Café de especialidad chiapaneco tostado medio y molido 100% arábigo. 
         `,
-        "Instrucciones de uso": `
-        Instrucciones
+        "Instrucciones_de_uso": `
+        <h2>Instrucciones</h2>
         <br>
         <br>Almacenamiento. Guarda tu bolsa de café en un lugar fresco, oscuro y seco. Evita la exposición a la luz directa y al aire, ya que estos factores pueden afectar la frescura y calidad del café.
         <br>
@@ -39,7 +40,8 @@ const productos=[
         <br>Paso 2. Vierte cuidadosamente agua caliente en la taza, dejando un pequeño espacio en la parte superior. Remueve adecuadamente para asegurarte de que tanto el café como el azúcar se disuelva completamente (esto debería tomar aproximadamente 10-15 segundos).
         <br>Paso 3. Si te gusta tu café con leche, este es el momento ideal para agregarla.
         <br>Paso 4. Prueba tu café. ¿No tiene la fuerza deseada? Añade más gránulos de café la próxima vez. ¿Demasiado fuerte? Reduce la cantidad de café y añade un poco más de leche. Ajusta según sean tus preferencias.
-        `
+        `,
+       "Comentarios": `<h2>Comentarios</h2>`
     }
 ]
 
@@ -166,20 +168,20 @@ function CargarInformacion(){
             </div>
 
             <div class="barra-opciones">
-                <button  id="btn-descripcion" >
+                <button  id="btn-descripcion" onclick="mostrarDescripcion()">
                     Descripción
                 </button>
-                <button id="btn-ingredientes">
+                <button id="btn-ingredientes" onclick="mostrarIngredientes()">
                     Ingredientes
                 </button>
-                <button id="btn-instrucciones">
+                <button id="btn-instrucciones" onclick="mostrarInstrucciones()">
                     Instrucciones de uso
                 </button>
-                <button id="btn-comentarios">
+                <button id="btn-comentarios" onclick="mostrarComentarios()">
                     Comentarios
                 </button>
             </div>
-            <div class="contenido">
+            <div class="contenido" id="contenido">
                 <p>${producto.Descripción}</p>
             </div>
     </div>

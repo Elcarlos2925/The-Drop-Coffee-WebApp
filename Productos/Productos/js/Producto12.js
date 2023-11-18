@@ -14,39 +14,40 @@ const productos=[
         <br>
         <br>Este llavero es una representación perfecta de tu pasión por el café y tu conexión con The Drop Coffee. Ya sea que lo lleves en tus llaves, en tu mochila o en tu bolso, mostrarás tu amor por el café de calidad en cada paso que des.
         `,
-        "Características": `<h2>Características<h2>
-        <br>Cantidad: 1 pieza
-        <br>Acabado: Liso
-        <br>Color: ocre y amarillo
-        <br>Es industrial: No
-        <br>Es portátil: Si
-        <br>Género: Unisex
-        <br>Material: metal y plástico
-        <br>Medida de altura: 10 cm
-        <br>Medida de ancho: 8 cm
-        <br>Medida de peso: 0.83 kg
-        <br>Requiere ensamblaje: No
-        <br>Uso recomendado: Llaves, mochila o bolso
+        "Características": `<h2>Características</h2>
+        <br><strong>Cantidad:</strong> 1 pieza
+        <br><strong>Acabado:</strong> Liso
+        <br><strong>Color: </strong>ocre y amarillo
+        <br><strong>Es industrial:</strong> No
+        <br><strong>Es portátil:</strong> Si
+        <br><strong>Género: </strong>Unisex
+        <br><strong>Material:</strong> metal y plástico
+        <br><strong>Medida de altura:</strong> 10 cm
+        <br><strong>Medida de ancho:</strong> 8 cm
+        <br><strong>Medida de peso:</strong> 0.83 kg
+        <br><strong>Requiere ensamblaje:</strong> No
+        <br><strong>Uso recomendado:</strong> Llaves, mochila o bolso
         `,
-        "Instrucciones de uso": `<h2>Instrucciones de uso<h2>
-        <br><h2>Manejo con cuidado<h2>
+        "Instrucciones_de_uso": `<h2>Instrucciones de uso</h2>
+        <br><strong>Manejo con cuidado</strong>
         <br>Tu llavero es un accesorio elegante y funcional. Trátalo con cariño y evita someterlo a un uso rudo o fuerza excesiva.
-  
-        <br><h2>Limpieza regular<h2>
+        <br>
+        <br><strong>Limpieza regular</strong>
         <br>Para mantener su brillo y apariencia impecable, límpialo con un paño suave y seco de vez en cuando. Esto ayudará a eliminar la suciedad y el polvo acumulados.
-    
-        <br><h2>Evita la exposición a la humedad<h2>
+        <br>
+        <br><strong>Evita la exposición a la humedad</strong>
         <br>Aunque es resistente, evita sumergir tu llavero en agua o exponerlo a la humedad prolongada, el contacto constante con la humedad podría afectar su durabilidad.
-  
-        <br><h2>Cuidado con elementos decorativos<h2>
+        <br>
+        <br><strong>Cuidado con elementos decorativos</strong>
         <br>Si tu llavero cuenta con elementos decorativos como piedras o detalles metálicos, ten en cuenta que podrían desprenderse si se someten a un uso áspero, trátalos con delicadeza.
-  
-        <br><h2>Prevención contra raspaduras<h2>
+        <br>
+        <br><strong>Prevención contra raspaduras</strong>
         <br>Evita que tu llavero entre en contacto con objetos afilados o superficies ásperas que puedan causar raspaduras en su acabado.
-  
+        <br>
         <br>Siguiendo estas sencillas instrucciones, podrás disfrutar de tu llavero The Drop Coffee con estilo y mantenerlo en excelentes condiciones durante mucho tiempo. ¡Llévalo contigo con orgullo!
-        `
-      }
+        `,
+        "Comentarios": `<h2>Comentarios</h2>`
+    }
 ]
 
 const contenedorProductos = document.querySelector("#contenedor-producto-vista");
@@ -115,12 +116,11 @@ function CargarInformacion(){
                             </div>
                         </div>
                         <div class="like-share">
-                            <button class="like">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <button class="share">
-                                <i class="fas fa-link"></i>
-                            </button>
+                            <input type="checkbox" id="like">
+                            <label for="like" class="lbl-like"><i class="fas fa-heart"></i></label>
+                            
+                            <input type="checkbox" id="share">
+                            <label for="share" class="lbl-share"><i class="fas fa-link"></i></label>
                         </div>
                     </div>
                     <div class="precio-mxn-completo">
@@ -173,20 +173,20 @@ function CargarInformacion(){
             </div>
 
             <div class="barra-opciones">
-                <button  id="btn-descripcion" >
+                <button  id="btn-descripcion" onclick="mostrarDescripcion()">
                     Descripción
                 </button>
-                <button id="btn-ingredientes">
-                    Ingredientes
+                <button id="btn-ingredientes" onclick="mostrarCaracteristicas()">
+                    Características
                 </button>
-                <button id="btn-instrucciones">
+                <button id="btn-instrucciones" onclick="mostrarInstrucciones()">
                     Instrucciones de uso
                 </button>
-                <button id="btn-comentarios">
+                <button id="btn-comentarios" onclick="mostrarComentarios()">
                     Comentarios
                 </button>
             </div>
-            <div class="contenido">
+            <div class="contenido" id="contenido">
                 <p>${producto.Descripción}</p>
             </div>
     </div>
@@ -203,3 +203,109 @@ function actualizarNumerito(){
 }
 actualizarNumerito();
 CargarInformacion();
+
+function mostrarDescripcion() {
+
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Descripción}
+            <style>
+                #btn-descripcion{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-instrucciones,
+                #btn-comentarios,
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+
+function mostrarCaracteristicas() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Características}
+            <style>
+                #btn-ingredientes{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-instrucciones,
+                #btn-comentarios,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+  function mostrarInstrucciones() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Instrucciones_de_uso}
+            <style>
+                #btn-instrucciones{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-comentarios,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+  function mostrarComentarios() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Comentarios}
+            <style>
+                #btn-comentarios{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-instrucciones,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }

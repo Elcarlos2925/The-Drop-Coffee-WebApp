@@ -183,7 +183,7 @@ function CargarInformacion(){
             <div class="contenido" id="contenido">
                 <p>${producto.Descripción}</p>
             </div>
-    </div>
+        </div>
         `;
         contenedorProductos.append(div);
     })
