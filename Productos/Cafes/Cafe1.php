@@ -68,7 +68,7 @@
 
 
 <div id="contenedor-producto-vista" class="contenedor-producto-vista">
-
+    
     <!-- <div class="fondo-contenedor-producto" id="fondo-contenedor-producto">            
        <div class="carrusel-datos">
 

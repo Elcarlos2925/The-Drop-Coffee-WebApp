@@ -142,7 +142,7 @@
     align-items: center;
 }
 
-.like, .share {
+/*.like, .share {
     margin-right: 15px;
     width: 50px;
     height: 50px;
@@ -152,12 +152,30 @@
     background-color: #EBE6DF;
 }
 
-.like:active{
-    color: #B15E5E;
-}
-
 .like:hover, .share:hover {
     color: #fff;
+}*/
+
+.lbl-like, .lbl-share{
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: 0;
+    color: #342009;
+    background-color: #EBE6DF;
+}
+
+.lbl-like:hover,.lbl-share:hover{
+    color: #fff;
+}
+
+#like, #share{
+    display: none;
+}
+
+#like:checked~ .lbl-like{
+    color: #B15E5E;
 }
 
 .precio-mxn-completo{
@@ -254,7 +272,7 @@
     justify-content: center;
 }
 
-.añadir-al-carrito {
+.añadir-al-carrito{
     background-color: #342009;
     transition: all 0.3s;
 }
@@ -284,23 +302,12 @@
     font-size: 20px;
  }
 
-.contenido{
+.contenido, #contenido{
     border: 1px solid #B1995C;
     min-height: 30vh;
     margin: 0 20px;
     padding: 20px;
-    font-family: 'Poppins',sans-serif;
+/*    font-family: 'Poppins',sans-serif;*/
     text-align: justify;
     font-size: 12px;
 }
-
-.barra-opciones button:active{
-    color: #342009;
-    background-color: #fff;
-}
-
-#btn-descripcion{
-    color: #342009;
-    background-color: #fff;
-}
-

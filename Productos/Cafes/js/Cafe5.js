@@ -111,12 +111,11 @@ function CargarInformacion(){
                             </div>
                         </div>
                         <div class="like-share">
-                            <button class="like">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                            <button class="share">
-                                <i class="fas fa-link"></i>
-                            </button>
+                            <input type="checkbox" id="like">
+                            <label for="like" class="lbl-like"><i class="fas fa-heart"></i></label>
+                            
+                            <input type="checkbox" id="share">
+                            <label for="share" class="lbl-share"><i class="fas fa-link"></i></label>
                         </div>
                     </div>
                     <div class="precio-mxn-completo">
@@ -198,3 +197,109 @@ function actualizarNumerito(){
 }actualizarNumerito();
 
 CargarInformacion();
+
+function mostrarDescripcion() {
+
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Descripción}
+            <style>
+                #btn-descripcion{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-instrucciones,
+                #btn-comentarios,
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+
+function mostrarIngredientes() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Ingredientes}
+            <style>
+                #btn-ingredientes{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-instrucciones,
+                #btn-comentarios,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+  function mostrarInstrucciones() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Instrucciones_de_uso}
+            <style>
+                #btn-instrucciones{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-comentarios,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
+
+  function mostrarComentarios() {
+    document.querySelector("#contenido"). innerHTML = "";
+    productos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${producto.Comentarios}
+            <style>
+                #btn-comentarios{
+                    color: #342009;
+                    background-color: #fff;
+                }
+                
+                #btn-ingredientes,
+                #btn-instrucciones,
+                #btn-descripcion
+                {
+                    color: #fff;
+                    background-color: #342009;
+                }
+            </style>
+        `;
+        document.querySelector("#contenido").append(div);
+    })
+  }
