@@ -30,7 +30,7 @@ include 'Base-de-datos/conexion.php';
         </div>
         <div class="nav-nombre">
             <a href="index.php"><h2>The Drop Coffee</h2></a>
-        </div>
+            </div>
         <nav>
             <ul class="nav-links">
                 <li>
