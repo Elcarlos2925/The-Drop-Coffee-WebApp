@@ -43,7 +43,10 @@ include 'Base-de-datos/conexion.php';
                     <a href="Productos.php">Productos</a>
                 </li>
                 <li>
-                    <a href="Recetas.php">Recetas</a> 
+                    <a href="Recetas.php">Recetas</a>
+                </li>
+                <li>
+                    <a href="Favoritos/index.php">Favoritos</a>
                 </li>
             </ul>
         </nav>
@@ -67,6 +70,7 @@ include 'Base-de-datos/conexion.php';
                     <a href="Recetas.php">Recetas</a>
                     <a href="Registro/index.php">Registrar</a>
                     <a href="Carrito/index.php">Carrito</a>
+                    <a href="Favoritos/index.php">Favoritos</a>
             </div>
         </div>
 
