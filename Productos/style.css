@@ -368,3 +368,25 @@ form{
     color: #EBE6DF;
     background-color: #342009;
 }
+
+.nombre-usuario{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.btn-calificacion-comentarios button{
+    border: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background-color: #EBE6DF;
+    margin-right: 2.5px;
+}
+
+#estrellas{
+    color: #B1995C;
+}
+
+#estrellas-deshabilitada{
+    color: #342009;
+}
