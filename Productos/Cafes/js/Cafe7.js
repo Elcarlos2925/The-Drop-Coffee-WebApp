@@ -6,7 +6,7 @@ const productos=[
         "imagen1": "./img/CVD1.png",
         "imagen2": "./img/CVD2.png",
         "imagen3": "./img/CVD3.png",
-        "precio": 250.00,
+        "precio": 220.00,
         "Descripción": `<h2>Descripción</h2>
         <br>
         <br>Sumérgete en la rica tradición cafetera de Veracruz con nuestro Café de Veracruz Descafeinado, una joya tostada con esmero en la región. Este café de especialidad veracruzano está elaborado con pasión y cuidado, al igual que su contraparte cafeinada. Hemos seleccionado granos 100% arábigo para ofrecer una experiencia única, con un tostado medio que realza sus sabores naturales.
@@ -26,19 +26,19 @@ const productos=[
         <br>Café descafeinado de especialidad veracruzano tostado medio y molido 100% arábigo.
         `,
         "Instrucciones_de_uso": `
-        <h2>Instrucciones</h2>
-        <br>
-        <br>Almacenamiento. Guarda tu bolsa de café en un lugar fresco, oscuro y seco. Evita la exposición a la luz directa y al aire, ya que estos factores pueden afectar la frescura y calidad del café.
-        <br>
-        <br>Proporciones. Asegúrate de utilizar la cantidad adecuada de café por cada taza. Las recomendaciones varían según el método de preparación, pero generalmente se usa una cucharada de café por cada 180 ml de agua como punto de partida. Ajusta la cantidad según tu preferencia personal.
-        <br>
-        <br>
-        <br>Preparación
-        <br>Paso 1. Añade una cucharadita de café en tu taza. Si prefieres endulzarlo, puedes agregar azúcar al gusto.
-        <br>Paso 2. Vierte cuidadosamente agua caliente en la taza, dejando un pequeño espacio en la parte superior. Remueve adecuadamente para asegurarte de que tanto el café como el azúcar se disuelva completamente (esto debería tomar aproximadamente 10-15 segundos).
-        <br>Paso 3. Si te gusta tu café con leche, este es el momento ideal para agregarla.
-        <br>Paso 4. Prueba tu café. ¿No tiene la fuerza deseada? Añade más gránulos de café la próxima vez. ¿Demasiado fuerte? Reduce la cantidad de café y añade un poco más de leche. Ajusta según sean tus preferencias.
-      `,
+        <h2>Instrucciones de uso</h2>
+        <br> Guarda tu bolsa de café en un lugar fresco, oscuro y seco. Evita la exposición a la luz directa y al aire, ya que estos factores pueden afectar la frescura y calidad del café.
+        <br> 
+        <br> 
+        <br> 
+        <h3>Preparación</h3>
+        <br> 1. Mide la cantidad de café que vas a utilizar según las indicaciones de tu cafetera, generalmente se usa una cucharada colmada de café por cada 6 onzas de agua (177 ml), pero esto puede variar dependiendo de tu gusto.
+        <br> 2. Llena el depósito de agua de la cafetera con la cantidad requerida y coloca el café en el filtro correspondiente.
+        <br> 3. Enciende la cafetera y espera a que el café se prepare.
+        <br> 4. Si prefieres endulzarlo, puedes agregar azúcar después de que esté listo, ya sea que lo agregues directamente en tu taza o en la cafetera.
+        <br> 5. Si te gusta el café con leche, este es el momento ideal para añadirla en tu taza.
+        <br> 6. Prueba tu café. ¿No tiene la fuerza deseada? Ajusta la cantidad de café utilizada la próxima vez. ¿Demasiado fuerte? Prueba con menos café o más agua en la cafetera. Ajusta según tus preferencias y disfruta.
+       `,
        "Comentarios": `<h2>Comentarios</h2>`
     }
 ]

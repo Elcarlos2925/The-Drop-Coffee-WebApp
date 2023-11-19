@@ -33,7 +33,7 @@ const productos=[
         <br><strong>Uso recomendado:</strong> Comedor
         <br><strong>Forma: Cilíndrico
         `,
-        "Instrucciones_de_uso": `<h2>Instrucciones</h2>
+        "Instrucciones_de_uso": `<h2>Instrucciones de uso</h2>
         <br>Estas instrucciones te ayudarán a mantener tu termo en óptimas condiciones y prolongar su vida útil. También garantizarán que su uso sea seguro y efectivo.
         <br>
         <br><h2>Lavado inicial</h2>
