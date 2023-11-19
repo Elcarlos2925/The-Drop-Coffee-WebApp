@@ -71,6 +71,11 @@
     <!--Aqui se autorellena-->
 </div>
 
+<footer>
+    <hr>
+    &copy; 2023 - The Drop Coffee - <a href="">Privacy</a>
+</footer>
+
 </body>
 <script type="text/javascript" src="../../js/Nav-Menu.js"></script>
 </html>
