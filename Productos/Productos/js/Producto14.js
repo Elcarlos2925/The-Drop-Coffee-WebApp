@@ -172,7 +172,19 @@ function CargarInformacion(){
                     </div>
                 </div>
             </div>
+            <form action="">
+                <label for="">Talla: </label>
 
+                <input type="radio" id="s" name="Talla">
+                <input type="radio" id="m"name="Talla">
+                <input type="radio" id="l"name="Talla">
+                <input type="radio" id="xl" name="Talla">
+
+                <label for="s"  class="Talla" id="lbl-s">   S   </label>
+                <label for="m"  class="Talla" id="lbl-m">   M   </label>
+                <label for="l"  class="Talla" id="lbl-l">   L   </label>
+                <label for="xl" class="Talla" id="lbl-xl">  XL  </label>
+            </form>
             <div class="barra-opciones">
                 <button  id="btn-descripcion" onclick="mostrarDescripcion()">
                     Descripción

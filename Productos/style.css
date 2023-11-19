@@ -163,15 +163,18 @@
     font-size: 40px;
     border: 0;
     color: #342009;
+    cursor: pointer;
     background-color: #EBE6DF;
 }
 
 .lbl-like:hover,.lbl-share:hover{
     color: #fff;
+    cursor:pointer;
 }
 
 #like, #share{
     display: none;
+    cursor:pointer;
 }
 
 #like:checked~ .lbl-like{
@@ -232,6 +235,7 @@
     border: 0;
     border-radius: 50%;
     background-color: #fff;
+    cursor: pointer;
     font-size: 20px;
 }
 #right{
@@ -253,6 +257,7 @@
 }
 
 #btn-comprar-ahora{
+    cursor: pointer;
     background-color: #B1995C;
     border: 0;
     border-radius: 50px;
@@ -300,14 +305,66 @@
     font-family: 'Poppins',sans-serif;
     font-weight: bolder;
     font-size: 20px;
+    cursor:pointer;
  }
 
 .contenido, #contenido{
     border: 1px solid #B1995C;
     min-height: 30vh;
     margin: 0 20px;
-    padding: 20px;
+    padding: 50px;
 /*    font-family: 'Poppins',sans-serif;*/
     text-align: justify;
-    font-size: 12px;
+    font-size: 15px;
+    
+}
+/*
+            <input type="radio" id="s" name="Talla">
+            <input type="radio" id="m"name="Talla">
+            <input type="radio" id="l"name="Talla">
+            <input type="radio" id="xl" name="Talla">
+
+            <label for="s"  class="Talla" id="lbl-s">S</label>
+            <label for="m"  class="Talla" id="lbl-m">M</label>
+            <label for="l"  class="Talla" id="lbl-l">L</label>
+            <label for="xl" class="Talla" id="lbl-xl">XL</label>*/
+
+
+#s,#m,#l,#xl{
+    display: none;
+}
+
+form{
+    margin: 20px;
+}
+
+.Talla {
+    margin-right: 10px;
+    width: 60px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px; /* Ajusta el espacio vertical para centrar la letra */
+    text-align: center; /* Centra la letra horizontalmente */
+    border: solid 1px;
+    box-shadow: 0 1px 2px -8px #000;
+    color: #342009;
+    cursor: pointer;
+    background-color: #EBE6DF;
+    border-radius: 5px;
+    display: inline-block; /* Para que tenga un tamaño fijo y se muestre en línea */
+}
+
+
+.Talla:hover{
+    background-color: #342009;
+    color: #EBE6DF;
+    cursor:pointer;
+}
+
+#s:checked~ #lbl-s,
+#m:checked~ #lbl-m,
+#l:checked~ #lbl-l,
+#xl:checked~ #lbl-xl{
+    color: #EBE6DF;
+    background-color: #342009;
 }

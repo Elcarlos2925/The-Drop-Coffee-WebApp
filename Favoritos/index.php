@@ -64,6 +64,8 @@
 
     </header>
 <!-------------------------------------header--------------------------------------->
+
+
 <div id="carrito-vacio" class="disabled">
     <h1>
         Carrito Vacio
@@ -79,6 +81,8 @@
         <!--? aqui se autocompleta el codigo del codigo-->
     </div>
 </div>
+
+
 <div id="carrito-comprado" class="disabled">
     <h1 id="carrito-comprado">
         Muchas Gracias Por Tu Compra
@@ -88,6 +92,7 @@
     </h1>
 </div>
 
+
 <footer>
     <hr>
     &copy; 2023 - The Drop Coffee - <a href="">Privacy</a>
@@ -96,5 +101,5 @@
 
 </body>
 </html>
-<script src="../js/carrito.js"></script>
+<script src="../js/cafes.js"></script>
 <script type="text/javascript" src="../js/Nav-Menu.js"></script>
