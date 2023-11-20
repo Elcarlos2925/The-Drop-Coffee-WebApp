@@ -43,7 +43,71 @@ const productos=[
         <br><strong>Cuidado con bebidas calientes</strong>
         <br>Ten en cuenta que las bebidas calientes pueden hacer que la taza esté caliente al tacto. Utiliza la asa o un soporte para evitar quemaduras.
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Isabella Torres Muñoz</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Los vasos son ideales para mis bebidas preferidas, y el tamaño es perfecto. ¡Muy contenta con mi compra!
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Martín López Soto</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Los vasos son geniales, pero esperaba una gama más amplia de colores. Aún así, cumplen su función perfectamente.
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Javier Rodríguez García</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Buena calidad en los vasos, aunque considero que el precio podría ser más accesible. 
+`
     }
 ]
 

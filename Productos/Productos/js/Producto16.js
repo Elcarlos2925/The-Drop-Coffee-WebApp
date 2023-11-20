@@ -47,7 +47,94 @@ const productos=[
         <br>
         <br>Siguiendo estos consejos de cuidado, podrás mantener tu sudadera en óptimas condiciones y prolongar su vida útil. ¡Disfruta de tu sudadera The Drop Coffee con estilo y comodidad!
         `,
-        "Comentarios": `<strong>Comentarios</strong>`
+        "Comentarios": `<strong>Comentarios</strong>
+        <br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">María Fernández López</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Las sudaderas que pedí son muy bonitas y se ajustan perfectamente, ¡me encantan!
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Martina García Martínez</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Las sudaderas tienen un diseño muy original, pero la talla no coincide con lo esperado.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Daniel Torres Soto</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+La calidad de las sudaderas es excelente, pero el precio es un poco elevado.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Valentín Martínez Cruz</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Las sudaderas son cómodas, pero la variedad de colores podría ser mejor.
+        <br>`
     }
 ]
 

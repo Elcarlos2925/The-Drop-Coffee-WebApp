@@ -47,7 +47,73 @@ const productos=[
             <br>
         <br>Siguiendo estas sencillas instrucciones, podrás disfrutar de tu llavero The Drop Coffee con estilo y mantenerlo en excelentes condiciones durante mucho tiempo. ¡Llévalo contigo con orgullo!
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Carolina Torres Ruiz</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Los llaveros que compré son adorables, agregaron un toque especial a mis llaves, super recomendados. 
+
+        <br>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Martín Vargas Santos</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        La calidad de los materiales es excelente, pero siento que son algo costosos.
+
+        <br>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Valentina Moreno González</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Me encanta la variedad de diseños disponibles, siempre encuentro uno que se adapta a mi estilo.
+
+        <br>`
     }
 ]
 

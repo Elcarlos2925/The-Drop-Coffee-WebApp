@@ -43,7 +43,115 @@ const productos=[
         <br><strong>Cuidado con bebidas calientes</strong>
         <br>Ten en cuenta que las bebidas calientes pueden hacer que el tarro esté caliente al tacto. Utiliza la asa o un soporte para evitar quemaduras.
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Elena Mendoza González</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Los tarros son hermosos, pero me gustaria que tuvieran más variedad de colores. 
+        <br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Carlos Rodríguez Jiménez</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Los tarros que compré son de excelente calidad, pero creo que una mayor variedad de colores los haría aún más atractivos.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Adriana García Herrera</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Me encantan los tarros, pero creo que la falta de opciones de colores limita un poco las posibilidades de elección.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Miguel Torres Soto</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Los tarros son geniales, pero creo que agregar más opciones de colores sería un punto a favor para satisfacer diferentes gustos.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Laura González Martínez</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Los tarros son adorables, aunque una gama más amplia de colores sería ideal para personalizar mi colección.
+`
     }
 ]
 

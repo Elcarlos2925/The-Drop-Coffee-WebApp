@@ -47,7 +47,73 @@ const productos=[
         <br>
         <br>Siguiendo estos consejos de cuidado, podrás mantener tu playera en óptimas condiciones y prolongar su vida útil. ¡Disfruta de tu playera The Drop Coffee con estilo y comodidad!
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Camila Rodríguez Soto</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+La sudadera que compré es suave y cómoda, pero el color no es exactamente el mismo que se muestra en la imagen.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Andrea López Torres</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Me encanta la textura de las sudaderas, pero el proceso de entrega fue un poco lento.
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Lucas Sánchez Rodríguez</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Las sudaderas son perfectas para el invierno, mantienen el calor de manera eficiente.
+
+<br>`
     }
 ]
 

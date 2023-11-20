@@ -46,7 +46,73 @@ const productos=[
         <br>
         <br>Siguiendo estas sencillas instrucciones, podrás disfrutar de tu llavero The Drop Coffee con estilo y mantenerlo en excelentes condiciones durante mucho tiempo. ¡Llévalo contigo con orgullo!
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">María Fernández Torres</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        La calidad de los materiales de los llaveros es impresionante, aunque el precio puede ser un poco elevado.
+        
+        <br>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Diego Mendoza Soto</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        La variedad de diseños de los llaveros es asombrosa, siempre encuentro uno que se adapta a mi estilo.
+        
+        <br>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Ana López Martínez</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Los llaveros cumplen su función básica, aunque algunos diseños podrían ser más originales.
+        
+        <br>`
     }
 ]
 

@@ -44,7 +44,95 @@ const productos=[
         <br><strong>Cuidado con bebidas calientes</strong>
         <br>Ten en cuenta que las bebidas calientes pueden hacer que los vasos estén calientes al tacto. Utiliza el anillo de goma o un soporte para evitar quemaduras.
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Mateo Morales Cruz</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Los vasos que adquirí son perfectos para mis bebidas favoritas, pero me gustaria que tuvieran más variedad de colores.
+
+        <br>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Alejandro Navarro Silva</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        El precio se me hace algo un poco caro por lo que ofrecen. 
+        
+        <br>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Daniela Sánchez Flores</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas-deshabilitadas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Los vasos que adquirí son perfectos para mis bebidas favoritas, agradable sorpresa encontrar la medida justa
+        <br>
+<br>
+<div class="btn-calificacion-comentarios">
+    <br><strong class="nombre-usuario">Carolina Gómez Ramírez</strong><!--?aqui le cambias el nombre-->
+    <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas">
+        <i class="fas fa-coffee"></i>
+    </button>
+    <button id="estrellas-deshabilitadas">
+        <i class="fas fa-coffee"></i>
+    </button>
+</div>
+Los vasos que compré son resistentes y tienen un diseño encantador. ¡Perfectos para disfrutar de mis bebidas preferidas!
+
+<br>
+`
     }
 ]
 

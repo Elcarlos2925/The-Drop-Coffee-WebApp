@@ -45,7 +45,71 @@ const productos=[
         <br><h2>Cuidado con bebidas calientes</h2>
         <br>Ten en cuenta que las bebidas calientes pueden hacer que el termo esté caliente al tacto. Utiliza la asa o un soporte para evitar quemaduras.
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Sebastián Ortiz Martínez </strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        Los termos que ofrecen mantienen mi café caliente por horas, son perfectos para días ocupados!!!.
+
+    <br>
+    <br>
+    <div class="btn-calificacion-comentarios">
+        <br><strong class="nombre-usuario">Lucas Díaz Rodríguez</strong><!--?aqui le cambias el nombre-->
+        <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas-deshabilitadas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas-deshabilitadas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas-deshabilitadas">
+            <i class="fas fa-coffee"></i>
+        </button>
+    </div>
+    Los termos cumplen su función básica, aunque no destacan en características adicionales.
+
+    <br>
+    <br>
+    <div class="btn-calificacion-comentarios">
+        <br><strong class="nombre-usuario">Isabella Gómez Herrera</strong><!--?aqui le cambias el nombre-->
+        <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+    </div>
+    Lo compre para regalárselo a mi mamá y le súper encanto. `
     }
 ]
 

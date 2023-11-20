@@ -46,7 +46,71 @@ const productos=[
         <br>
         <br>Siguiendo estas sencillas instrucciones, podrás disfrutar de tu llavero The Drop Coffee con estilo y mantenerlo en excelentes condiciones durante mucho tiempo. ¡Llévalo contigo con orgullo!
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br> <div class="btn-calificacion-comentarios">
+        <br><strong class="nombre-usuario">Lucía Mendoza López</strong><!--?aqui le cambias el nombre-->
+        <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas-deshabilitadas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas-deshabilitadas">
+            <i class="fas fa-coffee"></i>
+        </button>
+    </div>
+    Considero que los llaveros tienen un tamaño bastante pequeño.
+
+    <br>
+    <br>
+    <div class="btn-calificacion-comentarios">
+        <br><strong class="nombre-usuario">Nicolás Soto Ramírez</strong><!--?aqui le cambias el nombre-->
+        <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+    </div>
+    Son hermosos los llaveros, ideal para regalos.
+    <br>
+    <br>
+    <div class="btn-calificacion-comentarios">
+        <br><strong class="nombre-usuario">Gabriel Pérez García</strong><!--?aqui le cambias el nombre-->
+        <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button id="estrellas">
+            <i class="fas fa-coffee"></i>
+        </button>
+    </div>
+    Los llaveros que adquirí son únicos, le dieron un toque personalizado a mis llaves. ¡Muy recomendados!
+    
+    <br>`
     }
 ]
 

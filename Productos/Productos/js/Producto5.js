@@ -45,7 +45,75 @@ const productos=[
         <br><strong>Cuidado con bebidas calientes</strong>
         <br>Ten en cuenta que las bebidas calientes pueden hacer que las tazas estén calientes al tacto. Utiliza la asa o un soporte para evitar quemaduras.
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <h2 style="font-size: 20px;">Comentarios</h2><br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Andrea Rivas García </strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Las tazas que compre son encantadoras, cada una tiene su toque único y de muy buena calidad. 
+            <!--?Aqui pones el mensaje ahi si opupas espacios pues con <br>-->
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Valeria López Soto</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Me encanta la variedad de diseños en las tazas y el precio esta muy bien por la calidad que tienen las tazas.
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Juan Pablo Reyes Ramírez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La calidad de las tazas es impresionante, se nota que están hechas para durar.
+
+            <br>
+`
     }
 ]
 

@@ -48,7 +48,71 @@ const productos=[
         <br><strong>Manejo con cuidado</strong>
         <br>Trata las tazas de cerámica con cuidado para evitar golpes que puedan romperlas o dañarlas.
         `,
-        "Comentarios": `<h2>Comentarios</h2>`
+        "Comentarios": `<h2>Comentarios</h2>
+        <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Nicolás Ruiz Martell</strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        La taza era para un regalo para mi novia y le encanto mucho!!
+        <br>
+<br>
+<div class="btn-calificacion-comentarios">
+<br><strong class="nombre-usuario">Gabriel Martínez Herrera</strong><!--?aqui le cambias el nombre-->
+<button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas">
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas-deshabilitadas">
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas-deshabilitadas">
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas-deshabilitadas">
+    <i class="fas fa-coffee"></i>
+</button>
+</div>
+El juego de tazas que compré es fantástico, cada una tiene un diseño único y llamativo. ¡Me encantan!
+
+<br>
+<br>
+<div class="btn-calificacion-comentarios">
+<br><strong class="nombre-usuario">Ana Rodríguez García</strong><!--?aqui le cambias el nombre-->
+<button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas">
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas">
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas">
+    <i class="fas fa-coffee"></i>
+</button>
+<button id="estrellas">
+    <i class="fas fa-coffee"></i>
+</button>
+</div>
+¡Las tazas son hermosas! La entrega fue rápida y el empaque muy seguro. Muy satisfecha con mi compra.
+`
     }
 ]
 
