@@ -41,7 +41,74 @@ const productos=[
         <br> 5. Si te gusta el café con leche, este es el momento ideal para añadirla en tu taza.
         <br> 6. Prueba tu café. ¿No tiene la fuerza deseada? Ajusta la cantidad de café utilizada la próxima vez. ¿Demasiado fuerte? Prueba con menos café o más agua en la cafetera. Ajusta según tus preferencias y disfruta.
        `,
-       "Comentarios": `<h2>Comentarios</h2>`
+       "Comentarios": `
+       <h2>Comentarios</h2>
+       <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Camila Fernández Ruiz</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+        El café es riquísimo, a mi familia le encanto.
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Daniel Martínez Gómez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La experiencia de compra fue fácil y conveniente, además, el café es de alta calidad. ¡Excelente combinación!. 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Isabella Sánchez Castro</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            ¡Me encanta saber que al comprar este café estoy apoyando a pequeños productores! Sabe aún mejor sabiendo que es ético y delicioso.
+
+            <br>`
     }
 ]
 

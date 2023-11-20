@@ -41,7 +41,76 @@ const productos=[
         <br> 5. Si te gusta el café con leche, este es el momento ideal para añadirla en tu taza.
         <br> 6. Prueba tu café. ¿No tiene la fuerza deseada? Ajusta la cantidad de café utilizada la próxima vez. ¿Demasiado fuerte? Prueba con menos café o más agua en la cafetera. Ajusta según tus preferencias y disfruta.
        `,
-       "Comentarios": `<h2>Comentarios</h2>`
+       "Comentarios": `<h2>Comentarios</h2>
+       <br>
+       <div class="btn-calificacion-comentarios">
+           <br><strong class="nombre-usuario">Lucas Torres Herrera</strong><!--?aqui le cambias el nombre-->
+           <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas-deshabilitadas">
+               <i class="fas fa-coffee"></i>
+           </button>
+       </div>
+       La entrega fue dentro del plazo esperado, sin problemas destacables.
+       </div>  
+
+       <br>
+       <br>
+       <div class="btn-calificacion-comentarios">
+           <br><strong class="nombre-usuario">Emma Díaz Moreno</strong><!--?aqui le cambias el nombre-->
+           <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas-deshabilitadas">
+               <i class="fas fa-coffee"></i>
+           </button>
+       </div>
+       El café cumplió con mis expectativas básicas en cuanto a calidad y frescura
+       </div>  
+
+       <br>
+       <br>
+       <div class="btn-calificacion-comentarios">
+           <br><strong class="nombre-usuario">Nicolás Ruiz Silva</strong><!--?aqui le cambias el nombre-->
+           <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+           <button id="estrellas">
+               <i class="fas fa-coffee"></i>
+           </button>
+       </div>
+       Desde que descubrí este café, se ha convertido en mi favorito, no puedo dejar de recomendarlo.
+       </div>  
+
+       <br>`
     }
 ]
 

@@ -39,7 +39,77 @@ const productos=[
         <br> 5. Si te gusta el café con leche, este es el momento ideal para añadirla en tu taza.
         <br> 6. Prueba tu café. ¿No tiene la fuerza deseada? Ajusta la cantidad de café utilizada la próxima vez. ¿Demasiado fuerte? Prueba con menos café o más agua en la cafetera. Ajusta según tus preferencias y disfruta.
        `,
-       "Comentarios": `<h2>Comentarios</h2>`
+       "Comentarios": `<h2>Comentarios</h2>
+       <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Alejandra Martinez Flores</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La variedad de sabores disponibles es impresionante, siempre encuentro algo nuevo para experimentar y todos son realmente deliciosos
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Valentina Sánchez Pérez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El compromiso con los productores locales se refleja en cada bolsa, es genial apoyar esa labor, súper recomendado el cafe!!!
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Nicolás Rodríguez Cruz</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La atención al cliente es siempre amable y atenta, una experiencia muy gratificante.
+            </div> 
+
+
+            <br>`
     }
 ]
 

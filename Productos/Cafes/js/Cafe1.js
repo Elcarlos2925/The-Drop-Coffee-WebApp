@@ -40,7 +40,8 @@ const productos=[
         <br> 6. Prueba tu café. ¿No tiene la fuerza deseada? Ajusta la cantidad de café utilizada la próxima vez. ¿Demasiado fuerte? Prueba con menos café o más agua en la cafetera. Ajusta según tus preferencias y disfruta.
        `,
        "Comentarios": `
-       <h2>Comentarios</h2><br>
+       <h2>Comentarios</h2>
+       <br>
        <div class="btn-calificacion-comentarios">
             <br><strong class="nombre-usuario">Alejandra Torres García </strong><!--?aqui le cambias el nombre-->
             <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
@@ -86,6 +87,26 @@ const productos=[
         <!--?Aqui pones el mensaje ahi si opupas espacios pues con <br> cada que termine un comentario se le debe de poner dos <br>-->
         <br>
         <br>
+        <div class="btn-calificacion-comentarios">
+            <br><strong class="nombre-usuario">Sofía García Vargas </strong><!--?aqui le cambias el nombre-->
+            <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+            <button id="estrellas">
+                <i class="fas fa-coffee"></i>
+            </button>
+        </div>
+        El café que compré superó mis expectativas, el aroma y el sabor son simplemente deliciosos. Definitivamente lo volveria a comprar  
+
        `
     }
 ]

@@ -40,7 +40,77 @@ const productos=[
         <br> 5. Si te gusta el café con leche, este es el momento ideal para añadirla en tu taza.
         <br> 6. Prueba tu café. ¿No tiene la fuerza deseada? Ajusta la cantidad de café utilizada la próxima vez. ¿Demasiado fuerte? Prueba con menos café o más agua en la cafetera. Ajusta según tus preferencias y disfruta.
        `,
-       "Comentarios": `<h2>Comentarios</h2>`
+       "Comentarios": `<h2>Comentarios</h2>
+       <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Sebastián Ríos Sánchez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El compromiso con la calidad es notorio, porque el producto viene muy bien cuidado y llego a tiempo
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Natalia Guzmán Espinoza</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La atención al cliente es excelente, siempre responden con amabilidad y rapidez.
+            </div>  
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Andrés Castro Herrera</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café es bueno, aunque no me impresionó de manera sobresaliente en sabor.
+            </div>  
+
+            <br>`
     }
 ]
 
