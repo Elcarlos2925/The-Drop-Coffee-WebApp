@@ -181,7 +181,7 @@ function CargarInformacion(){
                             <div id="cal-5btn">
                                 <div id="calificacion">
                                     <h5>
-                                        4.0
+                                        3.7
                                     </h5>
                                 </div>
                                 <div class="btn-calificacion">
@@ -194,7 +194,7 @@ function CargarInformacion(){
                                     <button id="estrellas">
                                         <i class="fas fa-coffee"></i>
                                     </button>
-                                    <button id="estrellas">
+                                    <button id="estrellas-deshabilitada">
                                         <i class="fas fa-coffee"></i>
                                     </button>
                                     <button id="estrellas-deshabilitada">

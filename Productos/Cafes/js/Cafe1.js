@@ -154,7 +154,7 @@ function CargarInformacion(){
                             <div id="cal-5btn">
                                 <div id="calificacion">
                                     <h5>
-                                        4.0
+                                        4.6
                                     </h5>
                                 </div>
                                 <div class="btn-calificacion">
