@@ -1,8 +1,8 @@
 const productos=[
     {
-        "id": "16",
+        "id": "28",
         "titulo": "Sudadera Blanca especial The Drop Coffee",
-        "imagen": "./img/C1.png",
+        "imagen": "./img/P16.png",
         "imagen1": "./img/16-1.png",
         "imagen2": "./img/16-2.png",
         "imagen3": "./img/16-3.png",
@@ -141,6 +141,8 @@ Las sudaderas son cómodas, pero la variedad de colores podría ser mejor.
 const contenedorProductos = document.querySelector("#contenedor-producto-vista");
 const numerito = document.querySelector("#numerito");
 let botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
+let menos = document.querySelectorAll(".menos-completo");
+let mas = document.querySelectorAll(".mas-completo");
 
 function CargarInformacion(){
 
@@ -252,7 +254,7 @@ function CargarInformacion(){
                             </button>
                         </div>
                         <div class="add-to-car-completo">
-                            <button class="añadir-al-carrito">
+                            <button class="añadir-al-carrito" id="${producto.id}">
                                 <img src="../../img/carrito+.png" id="carritoplus" />
                             </button>
                         </div>
@@ -384,7 +386,7 @@ function mostrarCaracteristicas() {
     })
   }
 
-  function mostrarComentarios() {
+    function mostrarComentarios() {
     document.querySelector("#contenido"). innerHTML = "";
     productos.forEach(producto => {
 
@@ -409,3 +411,41 @@ function mostrarCaracteristicas() {
         document.querySelector("#contenido").append(div);
     })
   }
+
+
+                                
+
+function actualizarBotonesAgregar(){
+    botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
+    console.log(botonesAgregar);
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    })
+}
+
+let nuevoNumerito;
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+if(productosEnCarritoLS){
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumerito();
+}else{
+    productosEnCarrito = [];
+}
+
+function agregarAlCarrito(e){
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    if(productosEnCarrito.some(producto => producto.id === idBoton)){
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
+    }else{
+        productoAgregado.cantidad = 1 ;
+        productosEnCarrito.push(productoAgregado);
+    }
+    actualizarNumerito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+actualizarBotonesAgregar();

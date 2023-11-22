@@ -6,8 +6,7 @@ const contenedorCarritoProductos = document.querySelector("#contenedor-productos
 const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 let botonesEliminar = document.querySelector(".eliminar");
 const contenedorTotal = document.querySelector("#total");
-let menos = document.querySelectorAll(".menos");
-let mas = document.querySelectorAll(".mas");
+
 
 function actualizarNumerito(){
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);

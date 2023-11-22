@@ -1,7 +1,8 @@
 const productos=[
     {
-        "id": "1",
-        "titulo": "Set de 2 Tazas de Cerámica de 14 oz",
+      "id": "13",
+      "link": "1",
+      "titulo": "Set de 2 Tazas de Cerámica de 14 oz",
         "imagen": "./img/P1.png",
         "imagen1": "./img/1-1.png",
         "imagen2": "./img/1-2.png",
@@ -50,7 +51,8 @@ const productos=[
         `
       },
       {
-        "id": "2",
+        "id": "14",
+        "link": "2",
         "titulo": "Juego de 3 Tazas Coffee Cafe de 14 oz",
         "imagen": "./img/P2.png",
         "imagen1": "./img/2-1.png",
@@ -100,7 +102,8 @@ const productos=[
         `
       },
       {
-        "id": "3",
+        "id": "15",
+        "link": "3",
         "titulo": "Set de 2 Tazas Modernas I Love Coffee de 16 oz",
         "imagen": "./img/P3.png",
         "imagen1": "./img/3-1.png",
@@ -147,7 +150,8 @@ const productos=[
         `
       },
       {
-        "id": "4",
+        "id": "16",
+        "link": "4",
         "titulo": "Termo Especial The Drop Coffee de 24 oz",
         "imagen": "./img/P4.png",
         "imagen1": "./img/4-1.png",
@@ -194,7 +198,8 @@ const productos=[
         `
       },
       {
-        "id": "5",
+        "id": "17",
+        "link": "5",
         "titulo": "Set de 2 Tazas Aisladas de 14 oz",
         "imagen": "./img/P5.png",
         "imagen1": "./img/5-1.png",
@@ -241,7 +246,8 @@ const productos=[
         `
       },
       {
-        "id": "6",
+        "id": "18",
+        "link": "6",
         "titulo": "Juego de 3 Vasos Reutilizables para Café de 16 oz",
         "imagen": "./img/P6.png",
         "imagen1": "./img/6-1.png",
@@ -287,7 +293,8 @@ const productos=[
         `
       },
       {
-        "id": "7",
+        "id": "19",
+        "link": "7",
         "titulo": "Vaso especial The Drop Coffee de 500ml",
         "imagen": "./img/P7.png", 
         "imagen1": "./img/7-1.png",
@@ -332,7 +339,8 @@ const productos=[
         `
       },
       {
-        "id": "8",
+        "id": "20",
+        "link": "8",
         "titulo": "Tarro especial The Drop Coffee de 450 ml",
         "imagen": "./img/P8.png",
         "imagen1": "./img/8-1.png",
@@ -377,7 +385,8 @@ const productos=[
         `
       },
       {
-        "id": "9",
+        "id": "21",
+        "link": "9",
         "titulo": "Llavero con grano y vaso de café The Drop Coffee",
         "imagen": "./img/P9.png", 
         "imagen1": "./img/9-1.png",
@@ -425,7 +434,8 @@ const productos=[
         `
       },
       {
-        "id": "10",
+        "id": "22",
+        "link": "10",
         "titulo": "Llavero vaso de café mediano The Drop Coffee",
         "imagen": "./img/P10.png",
         "imagen1": "./img/10-1.png",
@@ -473,7 +483,8 @@ const productos=[
         `
       },
       {
-        "id": "11",
+        "id": "23",
+        "link": "11",
         "titulo": "Llavero taza de café The Drop Coffee",
         "imagen": "./img/P11.png", 
         "precio": 99.00,
@@ -522,7 +533,8 @@ const productos=[
         `
       },
       {
-        "id": "12",
+        "id": "24",
+        "link": "12",
         "titulo": "Llavero vaso de café helado The Drop Coffee",
         "imagen": "./img/P12.png",
         "precio": 150.00,
@@ -570,7 +582,8 @@ const productos=[
         `
       },
       {
-        "id": "13",
+        "id": "25",
+        "link": "13",
         "titulo": "Playera especial The Drop Coffee",
         "imagen": "./img/P13.png",
         "imagen1": "./img/13-1.png",
@@ -619,7 +632,8 @@ const productos=[
         `
       },
       {
-        "id": "14",
+        "id": "26",
+        "link": "14",
         "titulo": "Sudadera ocre especial The Drop Coffee",
         "imagen": "./img/P14.png",
         "imagen1": "./img/14-1.png",
@@ -667,7 +681,8 @@ const productos=[
         `
       },
       {
-        "id": "15",
+        "id": "27",
+        "link": "15",
         "titulo": "Sudadera café especial The Drop Coffee",
         "imagen": "./img/P15.png",
         "imagen1": "./img/15-1.png",
@@ -715,7 +730,8 @@ const productos=[
         `
       },
       {
-        "id": "16",
+        "id": "28",
+        "link": "16",
         "titulo": "Sudadera Blanca especial The Drop Coffee",
         "imagen": "./img/P16.png",
         "imagen1": "./img/16-1.png",
@@ -780,7 +796,7 @@ function CargarProductos(){
         div.innerHTML = `
         <div class="contenedor_producto">
             <div class="imagen-cafe" id="${producto.id}">
-                <a href="Productos/Productos/Producto${producto.id}.php"><img src="${producto.imagen}"></a>
+                <a href="Productos/Productos/Producto${producto.link}.php"><img src="${producto.imagen}"></a>
             </div>
 
             <div class="descripcion-producto">

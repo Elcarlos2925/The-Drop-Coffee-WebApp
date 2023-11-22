@@ -201,7 +201,7 @@
 
 .contenedor-cant-comp-addcar{
     display: grid;
-    grid-template-columns: 40% 40% 20%;
+    grid-template-columns: 0 50% 50%;
 }
 
 .cantidad-completo{
@@ -217,8 +217,9 @@
 }
 
 .cantidad-contenedor{
+    display: none;
     background-color: #fff;
-    display: grid;
+  /*  display: grid;*/
     width: 200px;
     height: 35px;
     border-radius: 50px;
