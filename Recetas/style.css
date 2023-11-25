@@ -1,0 +1,495 @@
+.titulo{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+.Receta {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.Receta ul{
+    margin-left: 20px;
+}
+
+.link-cafe{
+    color: #B1995C;
+}
+
+.float-text  {
+    width: 800px;
+    padding: 30px 30px;
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+}
+
+.imagen-CafeCalabaza, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeCalabaza {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeCalabaza img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeCalabaza {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeCalabaza img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/*Imagen Receta Veracruz*/
+
+.imagen-CafeVeracruz, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeVeracruz {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeVeracruz img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeVeracruz {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeVeracruz img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/*Imagen Receta navideña*/
+
+.imagen-CafeNavideño, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeNavideño {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeNavideño img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeNavideño {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeNavideño img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+/*Imagen Receta Mocha*/
+.imagen-CafeMocha, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeMocha {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeMocha img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeMocha {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeMocha img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/*Imagen Receta Vainilla*/
+.imagen-CafeVainilla, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeVainilla {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeVainilla img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeVainilla {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeVainilla img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+/*Imagen Receta Iris*/
+.imagen-CafeIris, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeIris {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeIris img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeIris {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeIris img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/*Imagen Receta Affogato*/
+
+.imagen-CafeAffogato, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeAffogato {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeAffogato img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeAffogato {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeAffogato img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+/*Imagen Receta Frappe*/
+
+.imagen-CafeFrappe, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeFrappe {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeFrappe img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeFrappe {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeFrappe img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+/*Imagen Receta Leche*/
+
+.imagen-CafeLeche, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeLeche {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeLeche img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeLeche {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeLeche img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+/*Imagen Receta Naranja*/
+.imagen-CafeNaranja, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeNaranja {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeNaranja img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeNaranja {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeNaranja img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/*Imagen Receta Coco*/
+.imagen-CafeCoco, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeCoco {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeCoco img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeCoco {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeCoco img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+/*Imagen Receta Vienes*/ 
+.imagen-CafeVienes, .float-text{
+    display: inline-block;
+}
+
+.imagen-CafeVienes {
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 30px;
+}
+
+.imagen-CafeVienes img{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {/*Index*/
+    .float-text {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Agrega margen superior e inferior para separar el texto del contenido */
+        padding: 20px 20px;
+    }
+    .imagen-CafeVienes {
+        float: none; /* Elimina la flotación en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+    .imagen-CafeVienes img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+#compartir-redes{
+    margin-left: 30px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(197, 197, 197);
+    margin: 5px;
+}

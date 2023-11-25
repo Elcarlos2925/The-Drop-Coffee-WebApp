@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <header class="header">
+        <header class="header">
         <div class="nav-logo">
             <a href="../../index.php"><img src="../../img/Logo-White.png" alt="logo"></a>
         </div>
@@ -35,7 +35,7 @@
                     <a href="../../Recetas.php">Recetas</a> 
                 </li>
                 <li>
-                    <a href="../../Favoritos/index.php">Favoritos</a>
+                    <a href="../../Registro/index.php">Favoritos</a>
                 </li>
             </ul>
         </nav>
@@ -45,7 +45,7 @@
                 <a href="../../Registro/index.php" class="btn"><button>Registrar</button></a>        
             </div>
             <div class="btn-car-shop">
-                <a href="../../Carrito/index.php" class="car-shop"><button><img src="../../img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
+                <a href="../../Registro/index.php" class="car-shop"><button><img src="../../img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
             </div>
         </div>
 
@@ -58,8 +58,8 @@
                     <a href="../../Productos.php">Productos</a>
                     <a href="../../Recetas.php">Recetas</a>
                     <a href="../../Registro/index.php">Registrar</a>
-                    <a href="../../Carrito/index.php">Carrito</a>
-                    <a href="../../Favoritos/index.php">Favoritos</a>
+                    <a href="../../Registro/index.php">Carrito</a>
+                    <a href="../../Registro/index.php">Favoritos</a>
             </div>
         </div>
 

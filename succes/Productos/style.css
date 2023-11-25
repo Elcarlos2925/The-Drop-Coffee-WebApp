@@ -1,0 +1,393 @@
+/*! rojo*/
+/* verde-normal*/
+/** verde-claro*/
+/*? Azul*/
+/*TODO: Naranja*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@500&family=Nunito:wght@500&family=Poppins:wght@600&display=swap');
+
+
+/*TODO: =================Carrusel========================*/
+
+.carrusel-btn{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+
+.carrusel-producto-completo img{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 10px;
+}
+
+.anterior-producto,
+.siguiente-producto{
+    cursor: pointer;
+    top: 50%;
+    font-size: 24px;
+    color: #342009;
+    background-color: #EBE6DF;
+    border: none;
+    height: 100%;
+}
+
+
+/*TODO: =================Carrusel========================*/
+
+.carrusel-datos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px 20px 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .carrusel-datos{
+        grid-template-columns: none;
+        margin: 20px 0px 20px 0;
+    }
+    .contenedor-datos-producto{
+        margin: 20px 0 0 0;
+        height: 350px;
+    }
+    .calific-like-share{
+        grid-template-columns: none;
+    }
+    .calificacion-contenedor{
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+    .btn-calificacion{
+        min-width: 250px;
+    }
+    #btn-descripcion,
+    #btn-ingredientes,
+    #btn-instrucciones,
+    #btn-comentarios{
+        font-size: 10px;
+    }
+
+}
+
+
+.contenedor-datos-producto{
+    border: 1px solid #B1995C;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 25% 25% 20% 30%;
+}
+
+.titulo{
+    color: #342009;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.calific-like-share{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.calificacion-contenedor{
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+#descripción-calificacion{
+    color: #B1995C;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#cal-5btn{
+    display: flex;
+    align-items: center;
+}
+
+#calificacion{
+    margin-right: 10px;
+    color: #B1995C;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.btn-calificacion button{
+    border: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #EBE6DF;
+    margin-right: 5px;
+}
+
+#estrellas{
+    color: #B1995C;
+}
+
+#estrellas-deshabilitada{
+    color: #342009;
+}
+
+.like-share{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*.like, .share {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: 0;
+    color: #342009;
+    background-color: #EBE6DF;
+}
+
+.like:hover, .share:hover {
+    color: #fff;
+}*/
+
+.lbl-like, .lbl-share{
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: 0;
+    color: #342009;
+    cursor: pointer;
+    background-color: #EBE6DF;
+}
+
+.lbl-like:hover,.lbl-share:hover{
+    color: #fff;
+    cursor:pointer;
+}
+
+#like, #share{
+    display: none;
+    cursor:pointer;
+}
+
+#like:checked~ .lbl-like{
+    color: #B15E5E;
+}
+
+.precio-mxn-completo{
+    color: #342009;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    display: flex;
+    align-items:self-end;
+}
+
+.precio-completo{
+    display: flex;
+    font-size: 50px;
+}
+
+.mxn-completo{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.contenedor-cant-comp-addcar{
+    display: grid;
+    grid-template-columns: 0 50% 50%;
+}
+
+.cantidad-completo{
+    height: 100%;
+    width: 100%;
+}
+
+.centrar-cantidad-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cantidad-contenedor{
+    display: none;
+    background-color: #fff;
+  /*  display: grid;*/
+    width: 200px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 0%;
+    margin: 0%;
+    grid-template-columns: 20% 60% 20%;
+    font-size: 20px;
+}
+
+#mas-completo, 
+#menos-completo{
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+#right{
+    margin-left: auto;
+}
+
+#cantidad-completo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.comprar-ahora{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#btn-comprar-ahora{
+    cursor: pointer;
+    background-color: #B1995C;
+    border: 0;
+    border-radius: 50px;
+    width: 200px;
+    height: 35px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.add-to-car-completo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.añadir-al-carrito{
+    background-color: #342009;
+    transition: all 0.3s;
+}
+
+.añadir-al-carrito:hover,
+#btn-comprar-ahora:hover{
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);}
+.añadir-al-carrito:hover img{
+    filter: invert();
+}
+
+.barra-opciones{
+    background-color: #342009;
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 50px;
+}
+ .barra-opciones button{
+    border: 0;
+    background-color: #342009;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor:pointer;
+ }
+
+.contenido, #contenido{
+    border: 1px solid #B1995C;
+    min-height: 30vh;
+    margin: 0 20px;
+    padding: 50px;
+/*    font-family: 'Poppins',sans-serif;*/
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+/*
+            <input type="radio" id="s" name="Talla">
+            <input type="radio" id="m"name="Talla">
+            <input type="radio" id="l"name="Talla">
+            <input type="radio" id="xl" name="Talla">
+
+            <label for="s"  class="Talla" id="lbl-s">S</label>
+            <label for="m"  class="Talla" id="lbl-m">M</label>
+            <label for="l"  class="Talla" id="lbl-l">L</label>
+            <label for="xl" class="Talla" id="lbl-xl">XL</label>*/
+
+
+#s,#m,#l,#xl{
+    display: none;
+}
+
+form{
+    margin: 20px;
+}
+
+.Talla {
+    margin-right: 10px;
+    width: 60px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px; /* Ajusta el espacio vertical para centrar la letra */
+    text-align: center; /* Centra la letra horizontalmente */
+    border: solid 1px;
+    box-shadow: 0 1px 2px -8px #000;
+    color: #342009;
+    cursor: pointer;
+    background-color: #EBE6DF;
+    border-radius: 5px;
+    display: inline-block; /* Para que tenga un tamaño fijo y se muestre en línea */
+}
+
+
+.Talla:hover{
+    background-color: #342009;
+    color: #EBE6DF;
+    cursor:pointer;
+}
+
+#s:checked~ #lbl-s,
+#m:checked~ #lbl-m,
+#l:checked~ #lbl-l,
+#xl:checked~ #lbl-xl{
+    color: #EBE6DF;
+    background-color: #342009;
+}
+
+.nombre-usuario{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.btn-calificacion-comentarios button{
+    border: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background-color: #EBE6DF;
+    margin-right: 2.5px;
+}
+
+#estrellas{
+    color: #B1995C;
+}
+
+#estrellas-deshabilitada{
+    color: #342009;
+}

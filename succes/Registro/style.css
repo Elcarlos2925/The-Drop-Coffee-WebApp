@@ -1,0 +1,182 @@
+body{
+background-color: #EBE6DF;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex-wrap: wrap;
+}
+.mensaje-error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+    margin-top: 30px;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.contenedor-mensaje{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(249, 229, 232);
+    border-radius: 10px;
+    border:0;
+    padding: 10px 30px;
+    color: rgb(81, 26, 30);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+.contenedor-mensaje-succes{
+    background-color: rgb(230, 249, 229);
+    border-radius: 10px;
+    border:0;
+    padding: 10px 30px;
+    color: rgb(30, 81, 26);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Forms-Login{
+    margin-bottom: auto;
+    color: #EBE6DF;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+    50deg,
+    rgba(74, 64,53, 1) 50%,
+    rgba(74, 64, 53, 0.7)),url('../img/5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 400px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+.Forms-Login img{
+    text-align: center;
+}
+
+.Forms-Login h2{
+    color: #EBE6DF;
+    font-size: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.contraseña-contenedor input{
+    width: 80%;
+}
+
+label{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+input{
+    width: 80%;
+    margin-bottom: 10px;
+}
+input , textarea{
+    padding: 8px 6%;
+    background-color: #EBE6DF;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #0000;
+}
+
+input:valid:focus{
+    outline: 2px solid #1E92E9;;
+}
+
+input , ::placeholder{
+    color: gray;
+}
+
+.btn-is{
+    background-color: #B1995C;
+    width: 150px;
+    height: 40px;
+    align-self:center;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.btn-is:hover{
+    background-color: #EBE6DF;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.Forms-Login #Logo{
+    width: 15%;
+}
+
+@media(max-width: 768px){
+    body{
+        padding: 30px;
+    }
+    .Forms-Login{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+.cambio-form{/*a cambio me refiero a cuando cambia entre login y signin*/
+    color: #fff;
+    align-self:center;
+    margin-top: 20px;
+}
+
+.eye, .eye1 {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .eye::before,
+  .eye1::before {
+    content: "mostrar";
+    color: grey;
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .eye.active::before 
+  .eye1.active::before{
+    content: "ocultar";
+    color: gray;
+  }
+
+  #info-btn,#info-btn1{
+    font-size: 18px; /* Tamaño del ícono */
+    background-color: rgba(74, 64,53, 1);
+    border: 0;
+    width: 5px;
+    color: #B1995C; /* Color del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  }

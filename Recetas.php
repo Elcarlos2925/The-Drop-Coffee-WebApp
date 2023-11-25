@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-Recetas.css">
+    <link rel="stylesheet" href="css/styleRecetas.css">
 
     <link rel="Website Icon" type="png" href="img/Logosinfondo.png">
 
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="header">
+<header class="header">
         <div class="nav-logo">
             <a href="index.php"><img src="img/Logo-White.png" alt="logo"></a>
         </div>
@@ -38,10 +38,10 @@
                     <a href="Productos.php">Productos</a>
                 </li>
                 <li>
-                    <a href="Recetas.php">Recetas</a> 
+                    <a href="Recetas.php">Recetas</a>
                 </li>
                 <li>
-                    <a href="Favoritos/index.php">Favoritos</a>
+                    <a href="Registro/index.php" >Favoritos</a>
                 </li>
             </ul>
         </nav>
@@ -51,7 +51,7 @@
                 <a href="Registro/index.php" class="btn"><button>Registrar</button></a>        
             </div>
             <div class="btn-car-shop">
-                <a href="Carrito/index.php" class="car-shop"><button><img src="img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
+                <a href="Registro/index.php" class="car-shop"><button><img src="img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
             </div>
         </div>
 
@@ -63,9 +63,9 @@
                     <a href="Coffee.php">Café</a>
                     <a href="Productos.php">Productos</a>
                     <a href="Recetas.php">Recetas</a>
-                    <a href="Registro/sign-in.php">Registrar</a>
-                    <a href="Carrito/index.php">Carrito</a>
-                    <a href="Favoritos/index.php">Favoritos</a>
+                    <a href="Registro/index.php">Registrar</a>
+                    <a href="Registro/index.php">Carrito</a>
+                    <a href="Registro/index.php">Favoritos</a>
             </div>
         </div>
 
@@ -87,52 +87,152 @@
         <button class="anterior">&#10094; </button>
         <button class="siguiente"> &#10095;</button>
     </div>
-        <h1 class="titulo">Receta Cappuccino de Calabaza al estilo The Drop Coffee</h1>
-        
-        <div class="Receta">
-            <div class="float-text">           
-            <h2>Ingredientes</h2>
-            <br>
-            <ul>
-                <li>1 taza de café Americano especial <a href="Coffee.php" class="link-cafe">The Drop Coffee</a></li>
-                <li>1/4 de taza de puré de calabaza</li>
-                <li>1/2 taza de leche de nuestra preferencia</li>
-                <li>2 cucharadas de azúcar morena</li>
-                <li>1/2 cucharadita de canela en polvo</li>
-                <li>1/4 de cucharadita de nuez moscada</li>
-                <li>1/4 de cucharadita de jengibre en polvo</li>
-                <li>1/4 de cucharadita de extracto de vainilla</li>
-                <li>Crema batida (opcional)</li>
-                <li>Canela molida (para decorar, opcional)</li>
-            </ul>
+
+<!--CONTENEDOR RECETAS-->
+
+<div class="productos">
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe" id="1">
+                <a href="Recetas/RecetaFrappe.php"><img src="img/RecetaFrappe.png"></a>
             </div>
-            <div class="imagen-CafeCalabaza">
-                <img src="img/CafeCalabaza.jpg">
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Frappé</div>
             </div>
         </div>
-        <div class="Receta">
-            <div class="float-text">   
-                <h2>Preparación</h2>
-            <br>
-            <p><strong>Paso 1.</strong> En una olla pequeña, combina el puré de calabaza, la leche, el azúcar moreno, la canela en polvo, la nuez moscada y el jengibre en polvo. Cocina a fuego medio-bajo, revolviendo constantemente, hasta que la mezcla esté caliente pero no hierva. Asegúrate de que todos los ingredientes estén bien incorporados.</p>
-            <p><strong><br>Paso 2.</strong> Retira la mezcla del fuego y agrégale el extracto de vainilla. Revuelve para mezclar.</p>
-            <p><strong><br>Paso 3.</strong> Prepara una taza de café Americano especial The Drop Coffee.</p>
-            <p><strong><br>Paso 4.</strong> Vierte el café caliente en una taza grande y luego agrega la mezcla de calabaza caliente. Revuelve bien para combinar todos los sabores.</p>
-            <p><strong><br>Paso 5.</strong> Si lo deseas, puedes decorar tu cappuccino de calabaza con crema batida y espolvorear un poco de canela molida por encima.</p>
-            <p><strong><br>Paso 6.</strong> ¡Disfruta de tu cappuccino de calabaza casero!</p>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe" id="1">
+                <a href="Recetas/RecetaAffogato.php"><img src="img/RecetaAffogato.png"></a>
             </div>
-            </br>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Affogato</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaCalabaza.php"><img src="img/CafeCalabaza.jpg"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Cappuccino de Calabaza</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaCoco.php"><img src="img/RecetaCoco.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café con Coco y Almendra</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaIris.php"><img src="img/RecetaIris.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Irish Cream</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaLecheCanela.php"><img src="img/RecetaLeche.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café con Leche Condensada y Canela</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaMocha.php"><img src="img/RecetaMocha.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Mocha Especial</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaNaranja.php"><img src="img/RecetaNaranja.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café con Esencia de Naranja y Chocolate</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaNavideña.php"><img src="img/RecetaNavideña.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Especial Navideño</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaVainilla.php"><img src="img/RecetaVainilla.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Helado con Vainilla y Caramelo</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaVeracruz.php"><img src="img/RecetaVeracruz.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Veracruzano con espuma de vainilla</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondo-contenedor">
+        <div class="contenedor_producto">
+            <div class="imagen-cafe">
+                <a href="Recetas/RecetaVienes.php"><img src="img/RecetaVienes.png"></a>
+            </div>
+            <div class="descripcion-producto">
+                <div style="color:#EBE6DF" id="nombre-cafe">Café Vienés</div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<h3 id="compartir-redes">¡No olvides compartir una foto de cómo te quedó en nuestras redes sociales!</h3>
+
+        <footer>
             <hr>
-        </div>
-        </div>
-        <h3 id="compartir-redes">¡No olvides compartir una foto de cómo te quedó en nuestras redes sociales!</h3>
+            &copy; 2023 - The Drop Coffee - <a href="">Privacy</a>
+        </footer>
 
-    <footer>
-        <hr>
-        &copy; 2023 - The Drop Coffee - <a href="">Privacy</a>
-    </footer>
-
-    <script type="text/javascript" src="js/Nav-Menu.js"></script>
+        <script type="text/javascript" src="js/Nav-Menu.js"></script>
     <script src="js/script.js"></script>
 
 </body>

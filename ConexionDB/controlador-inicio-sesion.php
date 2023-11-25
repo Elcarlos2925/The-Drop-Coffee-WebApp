@@ -3,47 +3,52 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-//llamar conexión base de datos
-include '../ConexionDB/conexion.php';
-$mensaje = '';
-if(isset($_POST['iniciar-sesion'])){
+// Iniciar la sesión (asegúrate de hacer esto al principio de tus archivos PHP)
+session_start();
 
-    //ruser r=recuperar user=usuario por que luego llora el niño omar psdt:carita enojada
+// Llamar conexión a la base de datos
+include '../ConexionDB/conexion.php';
+
+$mensaje = '';
+$uservalid = 0;
+
+if (isset($_POST['iniciar-sesion'])) {
+    // Recuperar usuario y contraseña
     $ruser = $conexion->real_escape_string($_POST['email']);
-    //pass de password
     $rpass = $conexion->real_escape_string(md5($_POST['contraseña']));
-    $consulta = "SELECT * FROM usuarios WHERE correo_electronico='$ruser' and contraseña='$rpass'";
-    if($resultado = $conexion->query($consulta)){
-        while($row = $resultado->fetch_array()){
-            $uservalid = $row["correo_electronico"];
+
+    // Modificar la consulta SQL para seleccionar solo el nombre del usuario
+    $consulta = "SELECT nombre_usuario, contraseña FROM usuarios WHERE correo_electronico='$ruser'";
+
+    // Verificar las credenciales
+    if ($resultado = $conexion->query($consulta)) {
+        while ($row = $resultado->fetch_array()) {
+            $nombreUsuario = $row["nombre_usuario"];
             $passwordvalid = $row["contraseña"];
+
+            if ($rpass == $passwordvalid) {
+                // Almacenar el nombre del usuario en la sesión
+                $_SESSION['login'] = true;
+                $_SESSION['usuario'] = $nombreUsuario;
+
+                // Redirigir a la página de éxito
+                header("location:../succes/index.php");
+                $uservalid = 1;
+            } else {
+                $mensaje .= "<div class='contenedor-mensaje'>
+                                <strong>Contraseña incorrecta: </strong> Verifica tu contraseña e intenta de nuevo.
+                              </div>";
+            }
         }
         $resultado->close();
+    } else {
+        $mensaje .= "<div class='contenedor-mensaje'>
+                        <strong>Error en la consulta</strong> Por favor, contacta al soporte.
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
     }
     $conexion->close();
-    if(isset($ruser) && isset($rpass)){
-        if($ruser == $uservalid && $rpass == $passwordvalid){
-            $_SESSION['login'] = true;
-            $_SESSION['usuario'] = $usuario;
-            header("location:../index.php");
-            $uservalid=1;
-        }
-        else{
-/*            header("location:login.php");*/
-$mensaje.="<div class='contenedor-mensaje'>
-                        <strong>Usuario no valido: </strong> El usuario no se encuatra registrado, registre un usuario valido para iniciar sesión.    
-                        </div>";
-        }
-    }
-    else{
-        /*            header("location:login.php");*/
-                      $mensaje.="<div class='contenedor-mensaje'>
-                                <strong>Usuario no valido</strong> El usuario no se encuatra registrado en el sistema consulta a soporte.
-                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                                <span aria-hidden='true'>&times;</span>
-                                </button>
-                                </div>";
-                }
-        
 }
 ?>

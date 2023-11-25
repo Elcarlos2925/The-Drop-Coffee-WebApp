@@ -1,6 +1,12 @@
 <?php
 //solicitar el archivo de conexión a la base de datos
 include 'Base-de-datos/conexion.php';
+$productosEnCarrito = '[]';
+
+// Genera un script JavaScript para almacenar los datos en localStorage
+echo '<script>';
+echo 'localStorage.setItem("productos-en-carrito", \'' . $productosEnCarrito . '\');';
+echo '</script>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +52,7 @@ include 'Base-de-datos/conexion.php';
                     <a href="Recetas.php">Recetas</a>
                 </li>
                 <li>
-                    <a href="Favoritos/index.php">Favoritos</a>
+                    <a href="Registro/index.php">Favoritos</a>
                 </li>
             </ul>
         </nav>
@@ -56,7 +62,7 @@ include 'Base-de-datos/conexion.php';
                 <a href="Registro/index.php" class="btn"><button>Registrar</button></a>        
             </div>
             <div class="btn-car-shop">
-                <a href="Carrito/index.php" class="car-shop"><button><img src="img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
+                <a href="Registro/index.php" class="car-shop"><button><img src="img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
             </div>
         </div>
 
@@ -69,8 +75,8 @@ include 'Base-de-datos/conexion.php';
                     <a href="Productos.php">Productos</a>
                     <a href="Recetas.php">Recetas</a>
                     <a href="Registro/index.php">Registrar</a>
-                    <a href="Carrito/index.php">Carrito</a>
-                    <a href="Favoritos/index.php">Favoritos</a>
+                    <a href="Registro/index.php">Carrito</a>
+                    <a href="Registro/index.php">Favoritos</a>
             </div>
         </div>
 
@@ -118,4 +124,3 @@ include 'Base-de-datos/conexion.php';
     <script type="text/javascript" src="js/Nav-Menu.js"></script>
 </body>
 </html>
-<script src="js/cafes.js"></script>

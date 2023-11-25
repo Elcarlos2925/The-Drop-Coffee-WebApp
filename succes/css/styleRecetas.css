@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@500&family=Nunito:wght@500&family=Poppins:wght@600&display=swap');
+/*===========================Fuentes===========================*/
+
+/*===========================Contenedor de Productos===========================*/
+.productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en el ancho del contenedor */
+    justify-content:space-around;
+    padding: 50px 50px;
+}
+
+
+.fondo-contenedor {
+    background-color: #F5F5F7;
+    width: 278px;
+    height: 270px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+    .imagen-cafe img { 
+        transition: all 0.3s ease 0s;
+    }
+    .imagen-cafe img:hover { 
+
+        transform: scale(1.05);
+        border-radius: 10px 10px 10px 10px;
+        background-color: #EBE6DF;
+        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    }
+
+.contenedor_producto {
+    width: 250px;
+    margin: 20px auto;
+    text-align: start;
+}
+.contenedor_producto img {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.descripcion-producto { 
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #342009;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    height: 100px;
+    display: grid;
+}
+
+#nombre-cafe{
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+}
+#compartir-redes{
+    margin-left: 30px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+/*===========================Contenedor de Productos===========================*/
+
+body {
+    background-color: #EBE6DF;
+position: relative;
+padding-bottom: 80px;
+min-height: 100vh;
+
+}
+
+footer {
+    background-color: #EBE6DF;
+    box-shadow: 0px -2px 32px -5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: .1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

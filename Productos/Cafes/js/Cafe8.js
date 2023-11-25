@@ -181,7 +181,8 @@ function CargarInformacion(){
                         </div>
                         <div class="like-share">
                             <input type="checkbox" id="like">
-                            <label for="like" class="lbl-like"><i class="fas fa-heart"></i></label>
+                            <label for="like" class="lbl-like"><a href="../../Registro/index.php"><i class="fas fa-heart"></i></a></label>
+
                             
                             <input type="checkbox" id="share">
                             <label for="share" class="lbl-share"><i class="fas fa-link"></i></label>
@@ -223,15 +224,15 @@ function CargarInformacion(){
             
                         </div>
                         <div class="comprar-ahora">
-                            <button id="btn-comprar-ahora">
+                            <a href="../../Registro/index.php"><button id="btn-comprar-ahora">
                                 <h5>Comprar Ahora</h5>
-                            </button>
+                            </button></a>
                         </div>
                         <div class="add-to-car-completo">
-                            <button class="añadir-al-carrito" id="${producto.id}">
+                            <a href="../../Registro/index.php"><button class="añadir-al-carrito" id="${producto.id}">
 
                                 <img src="../../img/carrito+.png" id="carritoplus" />
-                            </button>
+                            </button></a>
                         </div>
                     </div>
                 </div>
@@ -261,10 +262,6 @@ function CargarInformacion(){
 }
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
-function actualizarNumerito(){
-    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    numerito.innerText = nuevoNumerito;
-}actualizarNumerito();
 
 CargarInformacion();
 
@@ -376,38 +373,4 @@ function mostrarIngredientes() {
 
 
 
-                                     
-function actualizarBotonesAgregar(){
-    botonesAgregar = document.querySelectorAll(".añadir-al-carrito");
-    console.log(botonesAgregar);
 
-    botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
-    })
-}
-
-let nuevoNumerito;
-let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
-if(productosEnCarritoLS){
-    productosEnCarrito = JSON.parse(productosEnCarritoLS);
-    actualizarNumerito();
-}else{
-    productosEnCarrito = [];
-}
-
-function agregarAlCarrito(e){
-    const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
-
-    if(productosEnCarrito.some(producto => producto.id === idBoton)){
-        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-        productosEnCarrito[index].cantidad++;
-    }else{
-        productoAgregado.cantidad = 1 ;
-        productosEnCarrito.push(productoAgregado);
-    }
-    actualizarNumerito();
-
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-}
-actualizarBotonesAgregar();
