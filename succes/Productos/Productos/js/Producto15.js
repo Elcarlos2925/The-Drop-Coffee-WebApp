@@ -231,7 +231,7 @@ function CargarInformacion(){
                             <label for="like" class="lbl-like"><i class="fas fa-heart"></i></label>
                             
                             <input type="checkbox" id="share">
-                            <label for="share" class="lbl-share"><i class="fas fa-link"></i></label>
+                            <label for="share" class="lbl-share" onclick="copyLink()"><i class="fas fa-link"></i></label>
                         </div>
                     </div>
                     <div class="precio-mxn-completo">
@@ -271,7 +271,7 @@ function CargarInformacion(){
                         </div>
                         <div class="comprar-ahora">
                             <button id="btn-comprar-ahora">
-                                <h5>Comprar Ahora</h5>
+                                <a href="../../Direccion/index.php"><h5>Comprar Ahora</h5></a>
                             </button>
                         </div>
                         <div class="add-to-car-completo">
@@ -469,4 +469,25 @@ function agregarAlCarrito(e){
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
-actualizarBotonesAgregar();
+
+
+function copyLink() {
+    var linkToCopy = window.location.href;
+
+    var tempInput = document.createElement("input");
+    tempInput.value = linkToCopy;
+    document.body.appendChild(tempInput);
+
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); /* Para dispositivos móviles */
+
+    document.execCommand("copy");
+
+    document.body.removeChild(tempInput);
+
+    alert("Enlace copiado: " + linkToCopy);
+}
+
+
+actualizarBotonesAgregar() ;
+

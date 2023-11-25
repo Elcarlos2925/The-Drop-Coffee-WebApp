@@ -391,3 +391,16 @@ form{
 #estrellas-deshabilitada{
     color: #342009;
 }
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: #342009;
+}
+
+.btn-comprar-ahora:hover a{
+    color: #342009;
+}
