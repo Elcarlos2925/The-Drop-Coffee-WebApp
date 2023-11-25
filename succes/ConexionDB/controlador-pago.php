@@ -47,6 +47,7 @@ else
         $mensaje="<div class='contenedor-mensaje-succes'>
                 <strong>Compra Exitosa Muchas Gracias Por Confiar En Nosotros.</strong>
                 </div><style>.fondo-contenedor{display:none;}</style>";
+        header("location: correo.php");
     }
     elseif (strlen($_POST['numeroTarjeta']) >= 19
     && strlen($_POST['fecha']) >= 5

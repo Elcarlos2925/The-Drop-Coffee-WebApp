@@ -30,6 +30,7 @@ if (isset($_POST['iniciar-sesion'])) {
                 // Almacenar el nombre del usuario en la sesión
                 $_SESSION['login'] = true;
                 $_SESSION['usuario'] = $nombreUsuario;
+                $_SESSION['correo_para'] = $ruser;
 
                 // Redirigir a la página de éxito
                 header("location:../succes/index.php");
