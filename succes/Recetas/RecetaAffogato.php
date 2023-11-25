@@ -44,9 +44,7 @@ $usuario = $_SESSION['usuario'];
                 <li>
                     <a href="../Recetas.php">Recetas</a> 
                 </li>
-                <li>
-                    <a href="../Favoritos/index.php">Favoritos</a>
-                </li>
+                
             </ul>
         </nav>
         
@@ -69,7 +67,6 @@ $usuario = $_SESSION['usuario'];
                     <a href="../Productos.php">Productos</a>
                     <a href="../Recetas.php">Recetas</a>
                     <a href="../Carrito/index.php">Carrito</a>
-                    <a href="../Favoritos/index.php">Favoritos</a>
                     <a href="../../ConexionDB/controlador-cerrar-session.php">Cerrar Sesión</a>
             </div>
         </div>

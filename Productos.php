@@ -32,9 +32,7 @@
                 <li>
                     <a href="Recetas.php">Recetas</a>
                 </li>
-                <li>
-                    <a href="Registro/index.php" >Favoritos</a>
-                </li>
+                
             </ul>
         </nav>
         
@@ -57,7 +55,6 @@
                     <a href="Recetas.php">Recetas</a>
                     <a href="Registro/index.php">Registrar</a>
                     <a href="Registro/index.php">Carrito</a>
-                    <a href="Registro/index.php">Favoritos</a>
             </div>
         </div>
 
