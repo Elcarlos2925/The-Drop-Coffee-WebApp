@@ -21,6 +21,10 @@ const productos=[
         <br>Notas: Afrutadas
         <br>Molienda: Media
         `, 
+        "Ingredientes": `<h2>Ingredientes</h2>
+        <br>
+        <br>Café de especialidad oaxaqueño tostado medio y molido 100% arábigo.
+        `,
         "Instrucciones_de_uso": `
         <h2>Instrucciones de uso</h2>
         <br> Guarda tu bolsa de café en un lugar fresco, oscuro y seco. Evita la exposición a la luz directa y al aire, ya que estos factores pueden afectar la frescura y calidad del café.

@@ -39,7 +39,7 @@ const productos=[
         <br><strong>Lavado inicial</strong>
         <br>Lava las tazas antes de usarlas por primera vez con agua tibia y jabón suave. Enjuaga bien y sécalas completamente.
         <br>
-        <br<strong>>Lavado regular</strong>
+        <br><strong>Lavado regular</strong>
         <br>Lava las tazas después de cada uso con agua tibia y jabón suave. Evita el uso de productos de limpieza abrasivos, ya que pueden rayar la superficie.
         <br>
         <br><strong>Cuidado con bebidas calientes</strong>
