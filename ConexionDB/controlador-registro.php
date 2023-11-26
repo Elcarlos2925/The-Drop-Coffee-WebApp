@@ -28,7 +28,7 @@ if(isset($_POST['Registrar']))
                     <strong>Usuario creado exitosamente.</strong>
                     </div>";
 
-            header("location:../succes/sign-in.php");
+            header("location:../succes/Registro/sign-in.php");
         }
         else{
             $mensaje="<div class='contenedor-mensaje'>

@@ -13,5 +13,5 @@ if (mail($para, $asunto, $mensaje, $de)) {
 } else {
     echo "Error al enviar el correo";
 }
-
+header("location: ../index.php");
 ?>

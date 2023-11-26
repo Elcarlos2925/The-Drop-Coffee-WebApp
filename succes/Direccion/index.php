@@ -77,7 +77,7 @@ include("../ConexionDB/controlador-direccion.php");
                     </div>
             
                     <div class="input">
-                        <label for="Num-exterior">Núm exterior<span style="color: rgb(195, 195, 195);"> (opcional)</span></label>
+                        <label for="Num-exterior">Núm exterior<span style="color: rgb(195, 195, 195);  font-size:;"> (opcional)</span></label>
                         <div id="num-ext">
                             <input type="text" name="Num-exterior"  id="Num-exterior" >
                         </div>
@@ -95,7 +95,7 @@ include("../ConexionDB/controlador-direccion.php");
                     </div>
     
                     <div class="input">
-                        <label for="Especificaciones">Especificaciones<span style="color: rgb(195, 195, 195);"> (opcional)</span></label>
+                        <label for="Especificaciones">Especificaciones<span style="color: rgb(195, 195, 195); font-size:;"> (opcional)</span></label>
                         <div id="especificaciones">
                             <input type="text" name="Especificaciones"  id="Especificaciones" placeholder="Descripción de su casa, color etc." >
                         </div>
