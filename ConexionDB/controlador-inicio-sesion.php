@@ -17,7 +17,7 @@ if (isset($_POST['iniciar-sesion'])) {
     $ruser = $conexion->real_escape_string($_POST['email']);
     $rpass = $conexion->real_escape_string(md5($_POST['contraseña']));
 
-    // Modificar la consulta SQL para seleccionar solo el nombre del usuario
+    // consulta SQL
     $consulta = "SELECT nombre_usuario, contraseña FROM usuarios WHERE correo_electronico='$ruser'";
 
     // Verificar las credenciales
@@ -32,7 +32,7 @@ if (isset($_POST['iniciar-sesion'])) {
                 $_SESSION['usuario'] = $nombreUsuario;
                 $_SESSION['correo_para'] = $ruser;
 
-                // Redirigir a la página de éxito
+                // Redirigir a la página de inicio
                 header("location:../succes/index.php");
                 $uservalid = 1;
             } else {
