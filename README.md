@@ -21,7 +21,8 @@
       <img src="https://github-contributor-stats.vercel.app/api?username=elcarlos2925&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed Repo"/>
     </td>
     <td align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages"/>
+       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&repo=The-Drop-Coffee-WebApp" width="580px" alt="GitHub Streak Stats"/>
+</div>
     </td>
   </tr>
 </table>
