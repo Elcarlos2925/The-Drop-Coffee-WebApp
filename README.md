@@ -1,10 +1,5 @@
 # Proyecto The Drop Coffee Web App
 
-![Static Badge](https://img.shields.io/badge/Apple-white?style=for-the-badge&logo=apple&logoColor=black&labelColor=white&color=white)
-![Static Badge](https://img.shields.io/badge/|-white?style=for-the-badge&logoColor=black&labelColor=white&color=white)
-![GitHub followers](https://img.shields.io/github/followers/Elcarlos2925?style=for-the-badge&logo=GitHub&logoColor=black&labelColor=white&color=white)
-<br>
-
 ### <h3 align="center">⚙️ GitHub Analytics</h3>
 
 <table align="center" border="0">
